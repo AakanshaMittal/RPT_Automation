@@ -310,10 +310,10 @@ def main():
                 results,
                 file1_dict[tc].name,
                 file2_dict[tc].name,
-                OUTPUT_DIR / f"{tc}_Internal2.html"
+                OUTPUT_DIR / f"{tc}_Internal2_Dev24Apr.html"
             )
 
-    generate_consolidated_excel(summary, all_results, OUTPUT_DIR / "Consolidated_Report.xlsx")
+    generate_consolidated_excel(summary, all_results, OUTPUT_DIR / "Consolidated_Report_Dev24Apr.xlsx")
     print("\nAll scenarios completed.")
 
 

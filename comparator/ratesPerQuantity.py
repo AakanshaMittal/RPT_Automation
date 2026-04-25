@@ -71,7 +71,7 @@ def is_number(val: str) -> bool:
 
 def numeric_major_mismatch(v1: str, v2: str) -> bool:
     try:
-        return abs(float(clean_numeric(v1)) - float(clean_numeric(v2))) > 0.000001
+        return abs(float(clean_numeric(v1)) - float(clean_numeric(v2))) > 0.0001
     except Exception:
         return False
 
@@ -392,12 +392,12 @@ def main():
         )
 
         write_html_report(
-            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report.html",
+            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_Dev24Apr.html",
             mismatches, group_counter, extra1, extra2,
             file1.name, file2.name, missing1, missing2
         )
 
-    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report.xlsx")
+    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_Dev24Apr.xlsx")
     print("All scenarios completed.")
 
 

@@ -23,7 +23,6 @@ def run_tab(tab):
  
 if __name__ == "__main__":
  
-    tabs = [ "ratesPerQuantity", "raOutput", "rateBuildUp" ,    "outputSpecialityRpt", "fmsForecastOutput", "internalStats2", "externalStats", "finAlign" ]
- 
+    tabs = ["ratesPerQuantity", "raOutput", "rateBuildUp", "finAlign", "internalStats2", "externalStats", "outputSpecialityRpt" , "fmsForecastOutput" ]
     for tab in tabs:
         run_tab(tab)
