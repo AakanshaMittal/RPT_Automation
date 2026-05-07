@@ -1,0 +1,562 @@
+<html><head><title>RA Output Validation</title>
+<style>
+body{font-family:Arial;padding:20px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ccc;padding:6px;font-size:12px}
+th{background:#f2f2f2}
+.diff{background:#ffd6d6;font-weight:600}
+</style></head><body>
+<h1>RA Output Validation Report</h1>
+<p><b>Total mismatches:</b> 133</p>
+<p><b>Extra rows in RPT_RPT7685150048967XP_raOutput.xlsx:</b> 0</p>
+<p><b>Extra rows in TC20_Exc_RAO_SOT_9Apr.xlsx:</b> 0</p>
+<h2>Mismatch Summary (with NDCs)</h2>
+<table><tr><th>Header</th><th>Mismatch Count</th><th>Affected NDCs</th></tr>
+<tr><td>Pre-Shift_AWP</td><td>39</td><td>169450114, 169450514, 169451714, 169452414, 169452514</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP</td><td>24</td><td>169450114, 169450514, 169451714, 169452414, 169452514</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>24</td><td>169450114, 169450514, 169451714, 169452414, 169452514</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>24</td><td>169450114, 169450514, 169451714, 169452414, 169452514</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>22</td><td>169450114, 169450514, 169451714, 169452414, 169452514</td></tr>
+</table>
+<h2>Value Mismatches</h2>
+<table><tr><th>Row Key</th><th>Column</th><th>File 1</th><th>File 2</th></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$386198.2375291629</td><td>386198.23767764354</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$955601.3928456507</td><td>955601.3932359341</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$1146721.6714147807</td><td>1146721.671883121</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$1376066.0056977372</td><td>1376066.0062597448</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$1651279.2068372834</td><td>1651279.2075116932</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP</td><td>$254875.34424602252</td><td>254875.34435011784</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP</td><td>$305850.41309522715</td><td>305850.4132201414</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP</td><td>$367020.49571427226</td><td>367020.4958641695</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$254875.34424602252</td><td>254875.34435011784</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$305850.41309522715</td><td>305850.4132201414</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$367020.49571427226</td><td>367020.4958641695</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$309017.69018057967</td><td>309017.690299387</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$254875.34424602252</td><td>254875.34435011784</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$305850.41309522715</td><td>305850.4132201414</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$367020.49571427226</td><td>367020.4958641695</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$858588.4078209999</td><td>858588.4081510991</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2124474.4244409464</td><td>2124474.4253086173</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2549369.309329136</td><td>2549369.3103703405</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$3059243.1711949636</td><td>3059243.172444409</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$3671091.8054339555</td><td>3671091.8069332903</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$472194.9220713729</td><td>472194.9222642252</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$566633.9064856474</td><td>566633.9067170701</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$679960.687782777</td><td>679960.6880604842</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$815952.8253393322</td><td>815952.8256725809</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$472194.9220713729</td><td>472194.9222642252</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$566633.9064856474</td><td>566633.9067170701</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$679960.687782777</td><td>679960.6880604842</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$815952.8253393322</td><td>815952.8256725809</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$397570.66931513126</td><td>397570.6694679843</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$477084.8031781575</td><td>477084.8033615811</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$572501.7638137891</td><td>572501.7640338973</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$687002.1165765467</td><td>687002.1168406768</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$472194.9220713729</td><td>472194.9222642252</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$566633.9064856474</td><td>566633.9067170701</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$679960.687782777</td><td>679960.6880604842</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$815952.8253393322</td><td>815952.8256725809</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$660646.3028894085</td><td>660646.3031434056</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$1634690.3374248974</td><td>1634690.3380925322</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$1961628.4049098769</td><td>1961628.4057110385</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2353954.0858918526</td><td>2353954.086853246</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2824744.9030702217</td><td>2824744.9042238956</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$363333.3814758907</td><td>363333.3816242821</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$436000.05777106876</td><td>436000.05794913846</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$523200.0693252826</td><td>523200.0695389661</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$627840.0831903389</td><td>627840.0834467594</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$363333.3814758907</td><td>363333.3816242821</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$436000.05777106876</td><td>436000.05794913846</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$523200.0693252826</td><td>523200.0695389661</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$627840.0831903389</td><td>627840.0834467594</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$305913.5049459786</td><td>305913.5050635924</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$367096.2059351743</td><td>367096.2060763109</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$440515.44712220924</td><td>440515.44729157304</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$528618.5365466508</td><td>528618.5367498876</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$363333.3814758907</td><td>363333.3816242821</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$436000.05777106876</td><td>436000.05794913846</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$523200.0693252826</td><td>523200.0695389661</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$627840.0831903389</td><td>627840.0834467594</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||M||90</td><td>Pre-Shift_AWP</td><td>$271755.74101651233</td><td>271755.7411275018</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||M||90</td><td>Pre-Shift_AWP</td><td>$326106.8892198147</td><td>326106.8893530022</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$703961.4084640769</td><td>703961.4087347272</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$1741868.3905491927</td><td>1741868.3912606006</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2090242.0686590308</td><td>2090242.0695127205</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2508290.4823908377</td><td>2508290.4834152646</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$3009948.5788690043</td><td>3009948.580098317</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$387155.2415371648</td><td>387155.2416952854</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$464586.2898445976</td><td>464586.2900343424</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$557503.5478135173</td><td>557503.5480412109</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$669004.2573762205</td><td>669004.257649453</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$387155.2415371648</td><td>387155.2416952854</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$464586.2898445976</td><td>464586.2900343424</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$557503.5478135173</td><td>557503.5480412109</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$669004.2573762205</td><td>669004.257649453</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$325970.64551499224</td><td>325970.64564031735</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$391164.77461799054</td><td>391164.7747683807</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$469397.72954158875</td><td>469397.7297220569</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$563277.2754499064</td><td>563277.2756664682</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$387155.2415371648</td><td>387155.2416952854</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$464586.2898445976</td><td>464586.2900343424</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$557503.5478135173</td><td>557503.5480412109</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169450114||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$669004.2573762205</td><td>669004.257649453</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$263695.10114822</td><td>263695.10125591746</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$316434.121377864</td><td>316434.12150710094</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169451714||WEGOVY||REBATABLE||B||B||N||N||R||90</td><td>Pre-Shift_AWP</td><td>$379720.9456534367</td><td>379720.94580852106</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||M||90</td><td>Pre-Shift_AWP</td><td>$539479.8607362908</td><td>539479.8609566232</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||M||90</td><td>Pre-Shift_AWP</td><td>$647375.8328835488</td><td>647375.8331479478</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||M||90</td><td>Pre-Shift_AWP</td><td>$776850.9994602586</td><td>776850.9997775374</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||M||90</td><td>Pre-Shift_AWP</td><td>$932221.1993523104</td><td>932221.1997330451</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$1615809.4752117398</td><td>1615809.4758329655</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$3998127.477132622</td><td>3998127.4787655235</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$4797752.972559146</td><td>4797752.974518628</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$5757303.567070975</td><td>5757303.569422353</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$6908764.280485168</td><td>6908764.283306822</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$359136.8389528012</td><td>359136.83909087756</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$888641.1955713945</td><td>888641.1959343303</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$1066369.4346856733</td><td>1066369.4351211966</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$1279643.321622808</td><td>1279643.3221454355</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$1535571.9859473694</td><td>1535571.9865745225</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$359136.8389528012</td><td>359136.83909087756</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$888641.1955713945</td><td>888641.1959343303</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$1066369.4346856733</td><td>1066369.4351211966</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$1279643.321622808</td><td>1279643.3221454355</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$1535571.9859473694</td><td>1535571.9865745225</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$299281.2149309107</td><td>299281.2150459745</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$748203.0373272764</td><td>748203.0376149362</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$897843.6447927317</td><td>897843.6451379234</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$1077412.373751278</td><td>1077412.374165508</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$1292894.8485015333</td><td>1292894.8489986092</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$359136.8389528012</td><td>359136.83909087756</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$888641.1955713945</td><td>888641.1959343303</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$1066369.4346856733</td><td>1066369.4351211966</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$1279643.321622808</td><td>1279643.3221454355</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452414||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$1535571.9859473694</td><td>1535571.9865745225</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$632903.2473103685</td><td>632903.2475536992</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$1566043.4613471085</td><td>1566043.4619867066</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$1879252.1536165308</td><td>1879252.1543840487</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2255102.584339837</td><td>2255102.5852608583</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Pre-Shift_AWP</td><td>$2706123.1012078035</td><td>2706123.102313029</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$348075.6283454783</td><td>348075.6284876382</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$417690.7540145741</td><td>417690.754185166</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$501228.90481748903</td><td>501228.90502219915</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP</td><td>$601474.6857809867</td><td>601474.6860266388</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$348075.6283454783</td><td>348075.6284876382</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$417690.7540145741</td><td>417690.754185166</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$501228.90481748903</td><td>501228.90502219915</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP</td><td>$601474.6857809867</td><td>601474.6860266388</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$293067.03122323693</td><td>293067.03133591166</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$351680.4374678844</td><td>351680.4376030941</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$422016.5249614614</td><td>422016.52512371284</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)</td><td>$506419.8299537534</td><td>506419.8301484554</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$348075.6283454783</td><td>348075.6284876382</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$417690.7540145741</td><td>417690.754185166</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$501228.90481748903</td><td>501228.90502219915</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj</td><td>$601474.6857809867</td><td>601474.6860266388</td></tr>
+</table>
+<h2>Extra Rows</h2><h3>Only in File 1</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_2027</th>
+      <th>Pre-Shift_Scripts_2028</th>
+      <th>Pre-Shift_Scripts_2029</th>
+      <th>Pre-Shift_Scripts_2030</th>
+      <th>Pre-Shift_Scripts_2031</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_2027</th>
+      <th>Pre-Shift_QTY_2028</th>
+      <th>Pre-Shift_QTY_2029</th>
+      <th>Pre-Shift_QTY_2030</th>
+      <th>Pre-Shift_QTY_2031</th>
+      <th>Shifted_Scripts_2027 CoT</th>
+      <th>Shifted_Scripts_2028</th>
+      <th>Shifted_Scripts_2029</th>
+      <th>Shifted_Scripts_2030</th>
+      <th>Shifted_Scripts_2031</th>
+      <th>Shifted_QTY_2027 CoT</th>
+      <th>Shifted_QTY_2028</th>
+      <th>Shifted_QTY_2029</th>
+      <th>Shifted_QTY_2030</th>
+      <th>Shifted_QTY_2031</th>
+      <th>Shifted_QTY_Selected Exclusion Ind</th>
+      <th>Shifted_QTY_Selected Excl Desc</th>
+      <th>Shifted_QTY_Exclusion Year Ind</th>
+      <th>Shifted_QTY_Selected Generic Ind</th>
+      <th>Shifted_QTY_Selected Specialty Ind</th>
+      <th>Shifted_QTY_Selected Sp Inclusion Ind</th>
+      <th>Post-Shift + Hep C adj_Scripts_2027</th>
+      <th>Post-Shift + Hep C adj_Scripts_2028</th>
+      <th>Post-Shift + Hep C adj_Scripts_2029</th>
+      <th>Post-Shift + Hep C adj_Scripts_2030</th>
+      <th>Post-Shift + Hep C adj_Scripts_2031</th>
+      <th>Post-Shift + Hep C adj_QTY_2027</th>
+      <th>Post-Shift + Hep C adj_QTY_2028</th>
+      <th>Post-Shift + Hep C adj_QTY_2029</th>
+      <th>Post-Shift + Hep C adj_QTY_2030</th>
+      <th>Post-Shift + Hep C adj_QTY_2031</th>
+      <th>Pre-Shift_AWP_2027</th>
+      <th>Pre-Shift_AWP_2028</th>
+      <th>Pre-Shift_AWP_2029</th>
+      <th>Pre-Shift_AWP_2030</th>
+      <th>Pre-Shift_AWP_2031</th>
+      <th>Pre-Shift_Base_2027</th>
+      <th>Pre-Shift_Base_2028</th>
+      <th>Pre-Shift_Base_2029</th>
+      <th>Pre-Shift_Base_2030</th>
+      <th>Pre-Shift_Base_2031</th>
+      <th>Pre-Shift_MAF_2027</th>
+      <th>Pre-Shift_MAF_2028</th>
+      <th>Pre-Shift_MAF_2029</th>
+      <th>Pre-Shift_MAF_2030</th>
+      <th>Pre-Shift_MAF_2031</th>
+      <th>Pre-Shift_PPL_2027</th>
+      <th>Pre-Shift_PPL_2028</th>
+      <th>Pre-Shift_PPL_2029</th>
+      <th>Pre-Shift_PPL_2030</th>
+      <th>Pre-Shift_PPL_2031</th>
+      <th>Pre-Shift_PPA_2027</th>
+      <th>Pre-Shift_PPA_2028</th>
+      <th>Pre-Shift_PPA_2029</th>
+      <th>Pre-Shift_PPA_2030</th>
+      <th>Pre-Shift_PPA_2031</th>
+      <th>Post-Shift + Hep C adj_AWP_2027</th>
+      <th>Post-Shift + Hep C adj_AWP_2028</th>
+      <th>Post-Shift + Hep C adj_AWP_2029</th>
+      <th>Post-Shift + Hep C adj_AWP_2030</th>
+      <th>Post-Shift + Hep C adj_AWP_2031</th>
+      <th>Post-Shift + Hep C adj_Base_2027</th>
+      <th>Post-Shift + Hep C adj_Base_2028</th>
+      <th>Post-Shift + Hep C adj_Base_2029</th>
+      <th>Post-Shift + Hep C adj_Base_2030</th>
+      <th>Post-Shift + Hep C adj_Base_2031</th>
+      <th>Post-Shift + Hep C adj_MAF_2027</th>
+      <th>Post-Shift + Hep C adj_MAF_2028</th>
+      <th>Post-Shift + Hep C adj_MAF_2029</th>
+      <th>Post-Shift + Hep C adj_MAF_2030</th>
+      <th>Post-Shift + Hep C adj_MAF_2031</th>
+      <th>Post-Shift + Hep C adj_PPL_2027</th>
+      <th>Post-Shift + Hep C adj_PPL_2028</th>
+      <th>Post-Shift + Hep C adj_PPL_2029</th>
+      <th>Post-Shift + Hep C adj_PPL_2030</th>
+      <th>Post-Shift + Hep C adj_PPL_2031</th>
+      <th>Post-Shift + Hep C adj_PPA_2027</th>
+      <th>Post-Shift + Hep C adj_PPA_2028</th>
+      <th>Post-Shift + Hep C adj_PPA_2029</th>
+      <th>Post-Shift + Hep C adj_PPA_2030</th>
+      <th>Post-Shift + Hep C adj_PPA_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2031</th>
+      <th>Pre-Shift_MAF Adjustement_2027</th>
+      <th>Pre-Shift_MAF Adjustement_2028</th>
+      <th>Pre-Shift_MAF Adjustement_2029</th>
+      <th>Pre-Shift_MAF Adjustement_2030</th>
+      <th>Pre-Shift_MAF Adjustement_2031</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2027</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2028</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2029</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2030</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2031</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2027</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2028</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2029</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2030</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2031</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2031</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2027</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2028</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2029</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2030</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2031</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2031</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2031</th>
+      <th>Pre-MFP Adjustment Rebates_2027</th>
+      <th>Pre-MFP Adjustment Rebates_2028</th>
+      <th>Pre-MFP Adjustment Rebates_2029</th>
+      <th>Pre-MFP Adjustment Rebates_2030</th>
+      <th>Pre-MFP Adjustment Rebates_2031</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h3>Only in File 2</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_2027</th>
+      <th>Pre-Shift_Scripts_2028</th>
+      <th>Pre-Shift_Scripts_2029</th>
+      <th>Pre-Shift_Scripts_2030</th>
+      <th>Pre-Shift_Scripts_2031</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_2027</th>
+      <th>Pre-Shift_QTY_2028</th>
+      <th>Pre-Shift_QTY_2029</th>
+      <th>Pre-Shift_QTY_2030</th>
+      <th>Pre-Shift_QTY_2031</th>
+      <th>Shifted_Scripts_2027 CoT</th>
+      <th>Shifted_Scripts_2028</th>
+      <th>Shifted_Scripts_2029</th>
+      <th>Shifted_Scripts_2030</th>
+      <th>Shifted_Scripts_2031</th>
+      <th>Shifted_QTY_2027 CoT</th>
+      <th>Shifted_QTY_2028</th>
+      <th>Shifted_QTY_2029</th>
+      <th>Shifted_QTY_2030</th>
+      <th>Shifted_QTY_2031</th>
+      <th>EMPTY_COL_43</th>
+      <th>Shifted_QTY_Selected Exclusion Ind</th>
+      <th>Shifted_QTY_Selected Excl Desc</th>
+      <th>Shifted_QTY_Exclusion Year Ind</th>
+      <th>Shifted_QTY_Selected Generic Ind</th>
+      <th>Shifted_QTY_Selected Specialty Ind</th>
+      <th>Shifted_QTY_Selected Sp Inclusion Ind</th>
+      <th>Post-Shift + Hep C adj_Scripts_2027</th>
+      <th>Post-Shift + Hep C adj_Scripts_2028</th>
+      <th>Post-Shift + Hep C adj_Scripts_2029</th>
+      <th>Post-Shift + Hep C adj_Scripts_2030</th>
+      <th>Post-Shift + Hep C adj_Scripts_2031</th>
+      <th>Post-Shift + Hep C adj_QTY_2027</th>
+      <th>Post-Shift + Hep C adj_QTY_2028</th>
+      <th>Post-Shift + Hep C adj_QTY_2029</th>
+      <th>Post-Shift + Hep C adj_QTY_2030</th>
+      <th>Post-Shift + Hep C adj_QTY_2031</th>
+      <th>EMPTY_COL_60</th>
+      <th>Pre-Shift_AWP_2027</th>
+      <th>Pre-Shift_AWP_2028</th>
+      <th>Pre-Shift_AWP_2029</th>
+      <th>Pre-Shift_AWP_2030</th>
+      <th>Pre-Shift_AWP_2031</th>
+      <th>Pre-Shift_Base_2027</th>
+      <th>Pre-Shift_Base_2028</th>
+      <th>Pre-Shift_Base_2029</th>
+      <th>Pre-Shift_Base_2030</th>
+      <th>Pre-Shift_Base_2031</th>
+      <th>Pre-Shift_MAF_2027</th>
+      <th>Pre-Shift_MAF_2028</th>
+      <th>Pre-Shift_MAF_2029</th>
+      <th>Pre-Shift_MAF_2030</th>
+      <th>Pre-Shift_MAF_2031</th>
+      <th>Pre-Shift_PPL_2027</th>
+      <th>Pre-Shift_PPL_2028</th>
+      <th>Pre-Shift_PPL_2029</th>
+      <th>Pre-Shift_PPL_2030</th>
+      <th>Pre-Shift_PPL_2031</th>
+      <th>Pre-Shift_PPA_2027</th>
+      <th>Pre-Shift_PPA_2028</th>
+      <th>Pre-Shift_PPA_2029</th>
+      <th>Pre-Shift_PPA_2030</th>
+      <th>Pre-Shift_PPA_2031</th>
+      <th>EMPTY_COL_86</th>
+      <th>Post-Shift + Hep C adj_AWP_2027</th>
+      <th>Post-Shift + Hep C adj_AWP_2028</th>
+      <th>Post-Shift + Hep C adj_AWP_2029</th>
+      <th>Post-Shift + Hep C adj_AWP_2030</th>
+      <th>Post-Shift + Hep C adj_AWP_2031</th>
+      <th>Post-Shift + Hep C adj_Base_2027</th>
+      <th>Post-Shift + Hep C adj_Base_2028</th>
+      <th>Post-Shift + Hep C adj_Base_2029</th>
+      <th>Post-Shift + Hep C adj_Base_2030</th>
+      <th>Post-Shift + Hep C adj_Base_2031</th>
+      <th>Post-Shift + Hep C adj_MAF_2027</th>
+      <th>Post-Shift + Hep C adj_MAF_2028</th>
+      <th>Post-Shift + Hep C adj_MAF_2029</th>
+      <th>Post-Shift + Hep C adj_MAF_2030</th>
+      <th>Post-Shift + Hep C adj_MAF_2031</th>
+      <th>Post-Shift + Hep C adj_PPL_2027</th>
+      <th>Post-Shift + Hep C adj_PPL_2028</th>
+      <th>Post-Shift + Hep C adj_PPL_2029</th>
+      <th>Post-Shift + Hep C adj_PPL_2030</th>
+      <th>Post-Shift + Hep C adj_PPL_2031</th>
+      <th>Post-Shift + Hep C adj_PPA_2027</th>
+      <th>Post-Shift + Hep C adj_PPA_2028</th>
+      <th>Post-Shift + Hep C adj_PPA_2029</th>
+      <th>Post-Shift + Hep C adj_PPA_2030</th>
+      <th>Post-Shift + Hep C adj_PPA_2031</th>
+      <th>EMPTY_COL_112</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2031</th>
+      <th>EMPTY_COL_153</th>
+      <th>Pre-Shift_MAF Adjustement_2027</th>
+      <th>Pre-Shift_MAF Adjustement_2028</th>
+      <th>Pre-Shift_MAF Adjustement_2029</th>
+      <th>Pre-Shift_MAF Adjustement_2030</th>
+      <th>Pre-Shift_MAF Adjustement_2031</th>
+      <th>EMPTY_COL_159</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2027</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2028</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2029</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2030</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2031</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2027</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2028</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2029</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2030</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2031</th>
+      <th>EMPTY_COL_170</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2031</th>
+      <th>EMPTY_COL_176</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2027</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2028</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2029</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2030</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2031</th>
+      <th>EMPTY_COL_182</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2031</th>
+      <th>EMPTY_COL_188</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2031</th>
+      <th>EMPTY_COL_194</th>
+      <th>Pre-MFP Adjustment Rebates_2027</th>
+      <th>Pre-MFP Adjustment Rebates_2028</th>
+      <th>Pre-MFP Adjustment Rebates_2029</th>
+      <th>Pre-MFP Adjustment Rebates_2030</th>
+      <th>Pre-MFP Adjustment Rebates_2031</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</body></html>

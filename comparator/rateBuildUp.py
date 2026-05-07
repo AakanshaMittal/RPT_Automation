@@ -656,7 +656,7 @@ def main():
  
         html = generate_html(data, mismatches, [file1.name, file2.name], pos_results)
  
-        with open(out_path / f"TC{tc}_RBU_Report_Dev24Apr.html", "w", encoding="utf-8") as f:
+        with open(out_path / f"TC{tc}_RBU_Report_Dev6May.html", "w", encoding="utf-8") as f:
 
             f.write(html)
  
