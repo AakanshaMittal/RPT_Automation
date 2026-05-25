@@ -2,7 +2,7 @@ import requests
 from pathlib import Path
 import time
  
-BASE_URL = "https://actuarialhub-stg-api.optum.com/api/azure-blob/download"
+BASE_URL = "https://actuarialhub-dev-api.optum.com/api/azure-blob/download"
  
 def download_all_files(tab, mapping, base_data_path):
     save_folder = Path(base_data_path) / tab / "File1"

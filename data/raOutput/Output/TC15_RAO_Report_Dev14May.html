@@ -1,0 +1,828 @@
+<html><head><title>RA Output Validation</title>
+<style>
+body{font-family:Arial;padding:20px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ccc;padding:6px;font-size:12px}
+th{background:#f2f2f2}
+.diff{background:#ffd6d6;font-weight:600}
+</style></head><body>
+<h1>RA Output Validation Report</h1>
+<p><b>Total mismatches:</b> 30</p>
+<p><b>Extra rows in RPT_RPT3132569263113JV_raOutput.xlsx:</b> 1</p>
+<p><b>Extra rows in TC15_Exc_RAO_SOT_9Apr.xlsx:</b> 1</p>
+<h2>Mismatch Summary (with NDCs)</h2>
+<table><tr><th>Header</th><th>Mismatch Count</th><th>Affected NDCs</th></tr>
+<tr><td>Pre-Shift_MAF</td><td>6</td><td>2144509</td></tr>
+<tr><td>Post-Shift + Hep C adj_MAF</td><td>6</td><td>2144509</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF</td><td>6</td><td>2144509</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total</td><td>6</td><td>2144509</td></tr>
+<tr><td>Pre-MFP Adjustment Rebates</td><td>6</td><td>2144509</td></tr>
+</table>
+<h2>Value Mismatches</h2>
+<table><tr><th>Row Key</th><th>Column</th><th>File 1</th><th>File 2</th></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Pre-Shift_MAF</td><td>$126.54060000000001</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Pre-Shift_MAF</td><td>$257.823941688</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Post-Shift + Hep C adj_MAF</td><td>$126.54060000000001</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Post-Shift + Hep C adj_MAF</td><td>$257.823941688</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF</td><td>$126.54060000000001</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF</td><td>$257.823941688</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total</td><td>$134003.06308313223</td><td>133876.52248313223</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total</td><td>$147953.56742055345</td><td>147695.74347886545</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Pre-MFP Adjustment Rebates</td><td>$127627.99058393545</td><td>127501.44998393544</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||M||90</td><td>Pre-MFP Adjustment Rebates</td><td>$135758.50603239023</td><td>135500.68209070223</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Pre-Shift_MAF</td><td>$21.0901</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Pre-Shift_MAF</td><td>$42.970656948</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Post-Shift + Hep C adj_MAF</td><td>$21.0901</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Post-Shift + Hep C adj_MAF</td><td>$42.970656948</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF</td><td>$21.0901</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF</td><td>$42.970656948</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total</td><td>$22333.843847188706</td><td>22312.753747188704</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total</td><td>$24658.927903425574</td><td>24615.95724647757</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Pre-MFP Adjustment Rebates</td><td>$21271.33176398924</td><td>21250.24166398924</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||30</td><td>Pre-MFP Adjustment Rebates</td><td>$22626.41767206504</td><td>22583.447015117035</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Pre-Shift_MAF</td><td>$31.635150000000003</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Pre-Shift_MAF</td><td>$64.455985422</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Post-Shift + Hep C adj_MAF</td><td>$31.635150000000003</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Post-Shift + Hep C adj_MAF</td><td>$64.455985422</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF</td><td>$31.635150000000003</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF</td><td>$64.455985422</td><td>0</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total</td><td>$33500.76577078306</td><td>33469.13062078306</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total</td><td>$36988.39185513836</td><td>36923.935869716355</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Pre-MFP Adjustment Rebates</td><td>$31906.99764598386</td><td>31875.362495983863</td></tr>
+<tr class='diff'><td>PP_OO_DBMIRESP_GOV||2144509||TALTZ||REBATABLE||B||B||Y||Y||R||90</td><td>Pre-MFP Adjustment Rebates</td><td>$33939.62650809756</td><td>33875.17052267555</td></tr>
+</table>
+<h2>Extra Rows</h2><h3>Only in File 1</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_2027</th>
+      <th>Pre-Shift_Scripts_2028</th>
+      <th>Pre-Shift_Scripts_2029</th>
+      <th>Pre-Shift_Scripts_2030</th>
+      <th>Pre-Shift_Scripts_2031</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_2027</th>
+      <th>Pre-Shift_QTY_2028</th>
+      <th>Pre-Shift_QTY_2029</th>
+      <th>Pre-Shift_QTY_2030</th>
+      <th>Pre-Shift_QTY_2031</th>
+      <th>Shifted_Scripts_2027 CoT</th>
+      <th>Shifted_Scripts_2028</th>
+      <th>Shifted_Scripts_2029</th>
+      <th>Shifted_Scripts_2030</th>
+      <th>Shifted_Scripts_2031</th>
+      <th>Shifted_QTY_2027 CoT</th>
+      <th>Shifted_QTY_2028</th>
+      <th>Shifted_QTY_2029</th>
+      <th>Shifted_QTY_2030</th>
+      <th>Shifted_QTY_2031</th>
+      <th>Shifted_QTY_Selected Exclusion Ind</th>
+      <th>Shifted_QTY_Selected Excl Desc</th>
+      <th>Shifted_QTY_Exclusion Year Ind</th>
+      <th>Shifted_QTY_Selected Generic Ind</th>
+      <th>Shifted_QTY_Selected Specialty Ind</th>
+      <th>Shifted_QTY_Selected Sp Inclusion Ind</th>
+      <th>Post-Shift + Hep C adj_Scripts_2027</th>
+      <th>Post-Shift + Hep C adj_Scripts_2028</th>
+      <th>Post-Shift + Hep C adj_Scripts_2029</th>
+      <th>Post-Shift + Hep C adj_Scripts_2030</th>
+      <th>Post-Shift + Hep C adj_Scripts_2031</th>
+      <th>Post-Shift + Hep C adj_QTY_2027</th>
+      <th>Post-Shift + Hep C adj_QTY_2028</th>
+      <th>Post-Shift + Hep C adj_QTY_2029</th>
+      <th>Post-Shift + Hep C adj_QTY_2030</th>
+      <th>Post-Shift + Hep C adj_QTY_2031</th>
+      <th>Pre-Shift_AWP_2027</th>
+      <th>Pre-Shift_AWP_2028</th>
+      <th>Pre-Shift_AWP_2029</th>
+      <th>Pre-Shift_AWP_2030</th>
+      <th>Pre-Shift_AWP_2031</th>
+      <th>Pre-Shift_Base_2027</th>
+      <th>Pre-Shift_Base_2028</th>
+      <th>Pre-Shift_Base_2029</th>
+      <th>Pre-Shift_Base_2030</th>
+      <th>Pre-Shift_Base_2031</th>
+      <th>Pre-Shift_MAF_2027</th>
+      <th>Pre-Shift_MAF_2028</th>
+      <th>Pre-Shift_MAF_2029</th>
+      <th>Pre-Shift_MAF_2030</th>
+      <th>Pre-Shift_MAF_2031</th>
+      <th>Pre-Shift_PPL_2027</th>
+      <th>Pre-Shift_PPL_2028</th>
+      <th>Pre-Shift_PPL_2029</th>
+      <th>Pre-Shift_PPL_2030</th>
+      <th>Pre-Shift_PPL_2031</th>
+      <th>Pre-Shift_PPA_2027</th>
+      <th>Pre-Shift_PPA_2028</th>
+      <th>Pre-Shift_PPA_2029</th>
+      <th>Pre-Shift_PPA_2030</th>
+      <th>Pre-Shift_PPA_2031</th>
+      <th>Post-Shift + Hep C adj_AWP_2027</th>
+      <th>Post-Shift + Hep C adj_AWP_2028</th>
+      <th>Post-Shift + Hep C adj_AWP_2029</th>
+      <th>Post-Shift + Hep C adj_AWP_2030</th>
+      <th>Post-Shift + Hep C adj_AWP_2031</th>
+      <th>Post-Shift + Hep C adj_Base_2027</th>
+      <th>Post-Shift + Hep C adj_Base_2028</th>
+      <th>Post-Shift + Hep C adj_Base_2029</th>
+      <th>Post-Shift + Hep C adj_Base_2030</th>
+      <th>Post-Shift + Hep C adj_Base_2031</th>
+      <th>Post-Shift + Hep C adj_MAF_2027</th>
+      <th>Post-Shift + Hep C adj_MAF_2028</th>
+      <th>Post-Shift + Hep C adj_MAF_2029</th>
+      <th>Post-Shift + Hep C adj_MAF_2030</th>
+      <th>Post-Shift + Hep C adj_MAF_2031</th>
+      <th>Post-Shift + Hep C adj_PPL_2027</th>
+      <th>Post-Shift + Hep C adj_PPL_2028</th>
+      <th>Post-Shift + Hep C adj_PPL_2029</th>
+      <th>Post-Shift + Hep C adj_PPL_2030</th>
+      <th>Post-Shift + Hep C adj_PPL_2031</th>
+      <th>Post-Shift + Hep C adj_PPA_2027</th>
+      <th>Post-Shift + Hep C adj_PPA_2028</th>
+      <th>Post-Shift + Hep C adj_PPA_2029</th>
+      <th>Post-Shift + Hep C adj_PPA_2030</th>
+      <th>Post-Shift + Hep C adj_PPA_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2031</th>
+      <th>Pre-Shift_MAF Adjustement_2027</th>
+      <th>Pre-Shift_MAF Adjustement_2028</th>
+      <th>Pre-Shift_MAF Adjustement_2029</th>
+      <th>Pre-Shift_MAF Adjustement_2030</th>
+      <th>Pre-Shift_MAF Adjustement_2031</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2027</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2028</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2029</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2030</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2031</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2027</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2028</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2029</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2030</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2031</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2031</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2027</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2028</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2029</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2030</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2031</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2031</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_Base  w/o Biosim Adj_2031</th>
+      <th>Pre-MFP Adjustment Rebates_2027</th>
+      <th>Pre-MFP Adjustment Rebates_2028</th>
+      <th>Pre-MFP Adjustment Rebates_2029</th>
+      <th>Pre-MFP Adjustment Rebates_2030</th>
+      <th>Pre-MFP Adjustment Rebates_2031</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PP_OO_DBMIRESP_GOV||2143380||TRULICITY||REBATABLE||B||G||N||N||R||30</td>
+      <td>PP_OO_DBMIRESP_GOV</td>
+      <td>2143380</td>
+      <td>TRULICITY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>G</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.0245849445676275</td>
+      <td>GLUCAGON-LIKE PEPTIDE-1 AGONISTS (GLP1)</td>
+      <td>12730</td>
+      <td>537822.0200000001</td>
+      <td>451</td>
+      <td>405.448549</td>
+      <td>389.2306070399999</td>
+      <td>373.6613827584</td>
+      <td>358.714927448064</td>
+      <td>344.3663303501414</td>
+      <td>908</td>
+      <td>816.2910919999999</td>
+      <td>783.6394483199999</td>
+      <td>752.2938703871998</td>
+      <td>722.202115571712</td>
+      <td>693.3140309488434</td>
+      <td>405.448549</td>
+      <td>389.2306070399999</td>
+      <td>373.6613827584</td>
+      <td>358.714927448064</td>
+      <td>344.3663303501414</td>
+      <td>816.2910919999999</td>
+      <td>783.6394483199999</td>
+      <td>752.2938703871998</td>
+      <td>722.202115571712</td>
+      <td>693.3140309488434</td>
+      <td>N</td>
+      <td>NO EXCLUSION</td>
+      <td></td>
+      <td>G</td>
+      <td>N</td>
+      <td>N</td>
+      <td>405.448549</td>
+      <td>389.2306070399999</td>
+      <td>373.6613827584</td>
+      <td>358.714927448064</td>
+      <td>344.3663303501414</td>
+      <td>816.2910919999999</td>
+      <td>783.6394483199999</td>
+      <td>752.2938703871998</td>
+      <td>722.202115571712</td>
+      <td>693.3140309488434</td>
+      <td>$493215.9694552901</td>
+      <td>$478220.3100345265</td>
+      <td>$463680.57624348626</td>
+      <td>$449582.9061922716</td>
+      <td>$435913.85944566666</td>
+      <td>$214749.88515943152</td>
+      <td>$208220.66401102574</td>
+      <td>$201889.95625774073</td>
+      <td>$195751.72633007343</td>
+      <td>$189800.12216301003</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$493215.9694552901</td>
+      <td>$478220.3100345265</td>
+      <td>$463680.57624348626</td>
+      <td>$449582.9061922716</td>
+      <td>$435913.85944566666</td>
+      <td>$214749.88515943152</td>
+      <td>$208220.66401102574</td>
+      <td>$201889.95625774073</td>
+      <td>$195751.72633007343</td>
+      <td>$189800.12216301003</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$493215.9694552901</td>
+      <td>$478220.3100345265</td>
+      <td>$463680.57624348626</td>
+      <td>$449582.9061922716</td>
+      <td>$435913.85944566666</td>
+      <td>$225487.3794174031</td>
+      <td>$226960.5237720181</td>
+      <td>$226503.12300550443</td>
+      <td>$225987.35776960003</td>
+      <td>$225335.6067820141</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$225487.3794174031</td>
+      <td>$226960.5237720181</td>
+      <td>$226503.12300550443</td>
+      <td>$225987.35776960003</td>
+      <td>$225335.6067820141</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>$411004.5648984336</td>
+      <td>$398508.4478679919</td>
+      <td>$386392.26078036503</td>
+      <td>$374644.45230636065</td>
+      <td>$363253.8223215503</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>0.5225</td>
+      <td>0.5225</td>
+      <td>0.5225</td>
+      <td>0.5225</td>
+      <td>0.5225</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$0.0</td>
+      <td>$493215.9694552901</td>
+      <td>$478220.3100345265</td>
+      <td>$463680.57624348626</td>
+      <td>$449582.9061922716</td>
+      <td>$435913.85944566666</td>
+      <td>$214749.88515943152</td>
+      <td>$208220.66401102574</td>
+      <td>$201889.95625774073</td>
+      <td>$195751.72633007343</td>
+      <td>$189800.12216301003</td>
+      <td>$214749.88515943152</td>
+      <td>$208220.66401102574</td>
+      <td>$201889.95625774073</td>
+      <td>$195751.72633007343</td>
+      <td>$189800.12216301003</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Only in File 2</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_2027</th>
+      <th>Pre-Shift_Scripts_2028</th>
+      <th>Pre-Shift_Scripts_2029</th>
+      <th>Pre-Shift_Scripts_2030</th>
+      <th>Pre-Shift_Scripts_2031</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_2027</th>
+      <th>Pre-Shift_QTY_2028</th>
+      <th>Pre-Shift_QTY_2029</th>
+      <th>Pre-Shift_QTY_2030</th>
+      <th>Pre-Shift_QTY_2031</th>
+      <th>Shifted_Scripts_2027 CoT</th>
+      <th>Shifted_Scripts_2028</th>
+      <th>Shifted_Scripts_2029</th>
+      <th>Shifted_Scripts_2030</th>
+      <th>Shifted_Scripts_2031</th>
+      <th>Shifted_QTY_2027 CoT</th>
+      <th>Shifted_QTY_2028</th>
+      <th>Shifted_QTY_2029</th>
+      <th>Shifted_QTY_2030</th>
+      <th>Shifted_QTY_2031</th>
+      <th>Shifted_QTY_Selected Exclusion Ind</th>
+      <th>Shifted_QTY_Selected Excl Desc</th>
+      <th>Shifted_QTY_Exclusion Year Ind</th>
+      <th>Shifted_QTY_Selected Generic Ind</th>
+      <th>Shifted_QTY_Selected Specialty Ind</th>
+      <th>Shifted_QTY_Selected Sp Inclusion Ind</th>
+      <th>Post-Shift + Hep C adj_Scripts_2027</th>
+      <th>Post-Shift + Hep C adj_Scripts_2028</th>
+      <th>Post-Shift + Hep C adj_Scripts_2029</th>
+      <th>Post-Shift + Hep C adj_Scripts_2030</th>
+      <th>Post-Shift + Hep C adj_Scripts_2031</th>
+      <th>Post-Shift + Hep C adj_QTY_2027</th>
+      <th>Post-Shift + Hep C adj_QTY_2028</th>
+      <th>Post-Shift + Hep C adj_QTY_2029</th>
+      <th>Post-Shift + Hep C adj_QTY_2030</th>
+      <th>Post-Shift + Hep C adj_QTY_2031</th>
+      <th>Pre-Shift_AWP_2027</th>
+      <th>Pre-Shift_AWP_2028</th>
+      <th>Pre-Shift_AWP_2029</th>
+      <th>Pre-Shift_AWP_2030</th>
+      <th>Pre-Shift_AWP_2031</th>
+      <th>Pre-Shift_Base_2027</th>
+      <th>Pre-Shift_Base_2028</th>
+      <th>Pre-Shift_Base_2029</th>
+      <th>Pre-Shift_Base_2030</th>
+      <th>Pre-Shift_Base_2031</th>
+      <th>Pre-Shift_MAF_2027</th>
+      <th>Pre-Shift_MAF_2028</th>
+      <th>Pre-Shift_MAF_2029</th>
+      <th>Pre-Shift_MAF_2030</th>
+      <th>Pre-Shift_MAF_2031</th>
+      <th>Pre-Shift_PPL_2027</th>
+      <th>Pre-Shift_PPL_2028</th>
+      <th>Pre-Shift_PPL_2029</th>
+      <th>Pre-Shift_PPL_2030</th>
+      <th>Pre-Shift_PPL_2031</th>
+      <th>Pre-Shift_PPA_2027</th>
+      <th>Pre-Shift_PPA_2028</th>
+      <th>Pre-Shift_PPA_2029</th>
+      <th>Pre-Shift_PPA_2030</th>
+      <th>Pre-Shift_PPA_2031</th>
+      <th>Post-Shift + Hep C adj_AWP_2027</th>
+      <th>Post-Shift + Hep C adj_AWP_2028</th>
+      <th>Post-Shift + Hep C adj_AWP_2029</th>
+      <th>Post-Shift + Hep C adj_AWP_2030</th>
+      <th>Post-Shift + Hep C adj_AWP_2031</th>
+      <th>Post-Shift + Hep C adj_Base_2027</th>
+      <th>Post-Shift + Hep C adj_Base_2028</th>
+      <th>Post-Shift + Hep C adj_Base_2029</th>
+      <th>Post-Shift + Hep C adj_Base_2030</th>
+      <th>Post-Shift + Hep C adj_Base_2031</th>
+      <th>Post-Shift + Hep C adj_MAF_2027</th>
+      <th>Post-Shift + Hep C adj_MAF_2028</th>
+      <th>Post-Shift + Hep C adj_MAF_2029</th>
+      <th>Post-Shift + Hep C adj_MAF_2030</th>
+      <th>Post-Shift + Hep C adj_MAF_2031</th>
+      <th>Post-Shift + Hep C adj_PPL_2027</th>
+      <th>Post-Shift + Hep C adj_PPL_2028</th>
+      <th>Post-Shift + Hep C adj_PPL_2029</th>
+      <th>Post-Shift + Hep C adj_PPL_2030</th>
+      <th>Post-Shift + Hep C adj_PPL_2031</th>
+      <th>Post-Shift + Hep C adj_PPA_2027</th>
+      <th>Post-Shift + Hep C adj_PPA_2028</th>
+      <th>Post-Shift + Hep C adj_PPA_2029</th>
+      <th>Post-Shift + Hep C adj_PPA_2030</th>
+      <th>Post-Shift + Hep C adj_PPA_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_2031</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2027</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2028</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2029</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2030</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_2031</th>
+      <th>Pre-Shift_MAF Adjustement_2027</th>
+      <th>Pre-Shift_MAF Adjustement_2028</th>
+      <th>Pre-Shift_MAF Adjustement_2029</th>
+      <th>Pre-Shift_MAF Adjustement_2030</th>
+      <th>Pre-Shift_MAF Adjustement_2031</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2027</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2028</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2029</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2030</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_2031</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2027</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2028</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2029</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2030</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_2031</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2027</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2028</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2029</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2030</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_2031</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2027</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2028</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2029</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2030</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_2031</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_2031</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2027</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2028</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2029</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2030</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_2031</th>
+      <th>Pre-MFP Adjustment Rebates_2027</th>
+      <th>Pre-MFP Adjustment Rebates_2028</th>
+      <th>Pre-MFP Adjustment Rebates_2029</th>
+      <th>Pre-MFP Adjustment Rebates_2030</th>
+      <th>Pre-MFP Adjustment Rebates_2031</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PP_OO_DBMIRESP_GOV||2143380||TRULICITY||REBATABLE||B||B||N||N||R||30</td>
+      <td>PP_OO_DBMIRESP_GOV</td>
+      <td>2143380</td>
+      <td>TRULICITY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.02458494456762749</td>
+      <td>GLUCAGON-LIKE PEPTIDE-1 AGONISTS (GLP1)</td>
+      <td>12730</td>
+      <td>537822.0200000001</td>
+      <td>451</td>
+      <td>405.4485490000001</td>
+      <td>389.2306070399999</td>
+      <td>373.6613827584</td>
+      <td>358.714927448064</td>
+      <td>344.3663303501415</td>
+      <td>908</td>
+      <td>816.2910920000002</td>
+      <td>783.6394483199998</td>
+      <td>752.2938703872</td>
+      <td>722.2021155717119</td>
+      <td>693.3140309488435</td>
+      <td>405.4485490000001</td>
+      <td>389.2306070399999</td>
+      <td>373.6613827584</td>
+      <td>358.714927448064</td>
+      <td>344.3663303501415</td>
+      <td>816.2910920000002</td>
+      <td>783.6394483199998</td>
+      <td>752.2938703872</td>
+      <td>722.2021155717119</td>
+      <td>693.3140309488435</td>
+      <td>N</td>
+      <td>NO EXCLUSION</td>
+      <td></td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>405.4485490000001</td>
+      <td>389.2306070399999</td>
+      <td>373.6613827584</td>
+      <td>358.714927448064</td>
+      <td>344.3663303501415</td>
+      <td>816.2910920000002</td>
+      <td>783.6394483199998</td>
+      <td>752.2938703872</td>
+      <td>722.2021155717119</td>
+      <td>693.3140309488435</td>
+      <td>493215.9694552903</td>
+      <td>478220.3100345264</td>
+      <td>463680.5762434863</td>
+      <td>449582.90619227156</td>
+      <td>435913.8594456667</td>
+      <td>214749.8851594316</td>
+      <td>208220.6640110257</td>
+      <td>201889.95625774076</td>
+      <td>195751.72633007338</td>
+      <td>189800.12216301006</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>493215.9694552903</td>
+      <td>478220.3100345264</td>
+      <td>463680.5762434863</td>
+      <td>449582.90619227156</td>
+      <td>435913.8594456667</td>
+      <td>214749.8851594316</td>
+      <td>208220.6640110257</td>
+      <td>201889.95625774076</td>
+      <td>195751.72633007338</td>
+      <td>189800.12216301006</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>493215.9694552903</td>
+      <td>478220.3100345264</td>
+      <td>463680.5762434863</td>
+      <td>449582.90619227156</td>
+      <td>435913.8594456667</td>
+      <td>225487.3794174032</td>
+      <td>226960.52377201806</td>
+      <td>226503.12300550446</td>
+      <td>225987.35776959997</td>
+      <td>225335.60678201413</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>225487.3794174032</td>
+      <td>226960.52377201806</td>
+      <td>226503.12300550446</td>
+      <td>225987.35776959997</td>
+      <td>225335.60678201413</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>411004.5648984337</td>
+      <td>398508.4478679918</td>
+      <td>386392.2607803651</td>
+      <td>374644.4523063606</td>
+      <td>363253.82232155034</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.5225</td>
+      <td>0.5225</td>
+      <td>0.5225</td>
+      <td>0.5224999999999999</td>
+      <td>0.5225</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>493215.9694552903</td>
+      <td>478220.3100345264</td>
+      <td>463680.5762434863</td>
+      <td>449582.90619227156</td>
+      <td>435913.8594456667</td>
+      <td>214749.8851594316</td>
+      <td>208220.6640110257</td>
+      <td>201889.95625774076</td>
+      <td>195751.72633007338</td>
+      <td>189800.12216301006</td>
+      <td>214749.8851594316</td>
+      <td>208220.6640110257</td>
+      <td>201889.95625774076</td>
+      <td>195751.72633007338</td>
+      <td>189800.12216301006</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

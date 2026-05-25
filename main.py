@@ -23,6 +23,6 @@ def run_tab(tab):
  
 if __name__ == "__main__":
  
-    tabs = [  "internalStats2", "externalStats" ]
+    tabs = [  "rateBuildUp" ]
     for tab in tabs:
         run_tab(tab)
