@@ -344,14 +344,28 @@ def main():
 
         EXCEL_FILE = excel_map[tc]
  
-        OUTPUT_HTML = out_path / f"TC{tc}_Report_Dev25May.html"
+        OUTPUT_HTML = out_path / f"TC{tc}_Report_Dev3Jun.html"
  
         print(f"Processing TC{tc}...")
  
         df1 = load_and_prepare(APP_FILE)
 
         df2 = load_and_prepare(EXCEL_FILE)
- 
+
+        try:
+            print(f"Reading File1 (App): {APP_FILE}")
+            df1 = load_and_prepare(APP_FILE)
+        except Exception as e:
+            print(f"ERROR in File1 (App): {APP_FILE}")
+            print(f"Reason: {e}")
+            raise
+        try:
+            print(f"Reading File2 (Excel): {EXCEL_FILE}")
+            df2 = load_and_prepare(EXCEL_FILE)
+        except Exception as e:
+            print(f"ERROR in File2 (Excel): {EXCEL_FILE}")
+            print(f"Reason: {e}")
+            raise
         mismatches, group_summary, group_ndc_map = compare_data(df1, df2)
  
         missing_cols, extra_cols, missing_rows, extra_rows = find_missing(df1, df2)
