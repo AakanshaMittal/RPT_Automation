@@ -84,7 +84,6 @@ def normalize_ndc(val: str) -> str:
         return val.zfill(11)
     return val
 
-
 def extract_year(text: str) -> str:
     m = re.search(r"(20\d{2})", text)
     return m.group(1) if m else ""
@@ -392,12 +391,12 @@ def main():
         )
 
         write_html_report(
-            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_Dev3Jun.html",
+            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_Stg15Jun.html",
             mismatches, group_counter, extra1, extra2,
             file1.name, file2.name, missing1, missing2
         )
 
-    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_Dev3Jun.xlsx")
+    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_Stg15Jun.xlsx")
     print("All scenarios completed.")
 
 

@@ -344,7 +344,7 @@ def main():
 
         EXCEL_FILE = excel_map[tc]
  
-        OUTPUT_HTML = out_path / f"TC{tc}_Report_Dev3Jun.html"
+        OUTPUT_HTML = out_path / f"TC{tc}_Report_Stg15Jun.html"
  
         print(f"Processing TC{tc}...")
  
