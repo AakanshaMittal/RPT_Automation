@@ -12,9 +12,9 @@ BASE_DATA_PATH = "data"
 
 APP_FOLDER = f"{BASE_DATA_PATH}/fmsForecastOutput/File1"
 
-EXCEL_FOLDER = f"{BASE_DATA_PATH}/fmsForecastOutput/File2"
+EXCEL_FOLDER = f"{BASE_DATA_PATH}/fmsForecastOutput/RebateRefresh"
 
-OUTPUT_FOLDER = f"{BASE_DATA_PATH}/fmsForecastOutput/Output"
+OUTPUT_FOLDER = f"{BASE_DATA_PATH}/fmsForecastOutput/RebateRefreshOutput"
 
 MAPPING_FILE = "config/mapping.json"
  
@@ -360,7 +360,7 @@ def main():
  
         html = generate_html(results)
  
-        output_file = out_path / f"TC{tc}_FMS_Report_Stg15Jun.html"
+        output_file = out_path / f"TC{tc}_FMS_Report_26Jun.html"
  
         with open(output_file, "w") as f:
 

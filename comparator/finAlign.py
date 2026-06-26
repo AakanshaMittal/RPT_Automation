@@ -350,9 +350,9 @@ def main():
 
     file1_path = base_path/"File1"
 
-    file2_path = base_path/"File2"
+    file2_path = base_path/"RebateRefresh"
 
-    output_path = base_path/"Output"
+    output_path = base_path/"RebateRefreshOutput"
  
     os.makedirs(output_path, exist_ok=True)
  
@@ -404,7 +404,7 @@ def main():
  
         mismatches = compare_dataframes(df1, df2, pk)
  
-        output_file = output_path / f"{tc}_FinAlign_Stg15Jun.html"
+        output_file = output_path / f"{tc}_FinAlign_26Jun.html"
  
         html = generate_html_report(df1, df2, mismatches, pk, output_file)
  

@@ -12,9 +12,9 @@ BASE_DATA_PATH = "data"
  
 FILE1_FOLDER = f"{BASE_DATA_PATH}/rateBuildUp/File1"
 
-FILE2_FOLDER = f"{BASE_DATA_PATH}/rateBuildUp/File2"
+FILE2_FOLDER = f"{BASE_DATA_PATH}/rateBuildUp/RebateRefresh"
 
-OUTPUT_FOLDER = f"{BASE_DATA_PATH}/rateBuildUp/Output"
+OUTPUT_FOLDER = f"{BASE_DATA_PATH}/rateBuildUp/RebateRefreshOutput"
  
 MAPPING_FILE = "config/mapping.json"
  
@@ -192,7 +192,7 @@ def extract_rpt_id(filename):
  
 def extract_tc(filename):
  
-    match = re.search(r"TC(\d+)", filename.upper())
+    match = re.search(r"TC(\d+[A-Z]?)", filename.upper())
  
     return match.group(1) if match else None
  
@@ -924,7 +924,7 @@ def main():
 
             file2_map[tc] = f
  
-    common_tcs = sorted(set(file1_map) & set(file2_map), key=int)
+    common_tcs = sorted(set(file1_map) & set(file2_map), key=str)
  
     for tc in common_tcs:
  
@@ -998,7 +998,7 @@ def main():
  
         with open(
 
-            out_path / f"TC{tc}_RBU_Report_Stg15Jun.html",
+            out_path / f"TC{tc}_RBU_Report_26Jun.html",
 
             "w",
 
@@ -1014,7 +1014,7 @@ def main():
  
     summary_df.to_excel(
 
-        out_path / "RBU_Execution_SummaryStg15Jun.xlsx",
+        out_path / "RBU_Execution_Summary26Jun.xlsx",
 
         index=False
 

@@ -8,8 +8,8 @@ from openpyxl import Workbook
 from openpyxl.styles import Font
 
 file1_folder = r"data/raOutput/File1"
-file2_folder = r"data/raOutput/File2"
-output_folder = r"data/raOutput/Output"
+file2_folder = r"data/raOutput/RebateRefresh"
+output_folder = r"data/raOutput/RebateRefreshOutput"
 mapping_file = r"config/mapping.json"
 
 TOL = "0.0001"
@@ -33,7 +33,7 @@ def extract_rpt_id(filename):
 
 
 def extract_tc(filename):
-    match = re.search(r"TC(\d+)", filename.upper())
+    match = re.search(r"TC(\d+[A-Z]?)", filename.upper())
     return match.group(1) if match else None
 
 
@@ -304,7 +304,7 @@ def main():
     ws_summary.title = "Summary"
     ws_summary.append(["Test Case", "Total Mismatches"])
 
-    for tc in sorted(set(file1_map) & set(file2_map), key=int):
+    for tc in sorted(set(file1_map) & set(file2_map), key=str):
         file1 = file1_map[tc]
         file2 = file2_map[tc]
 
@@ -343,10 +343,10 @@ def main():
         generate_html_report(
             extra1, extra2, mismatches, summary, ndc_map,
             file1.name, file2.name,
-            out_path / f"TC{tc}_RAO_Report_Stg15Jun.html"
+            out_path / f"TC{tc}_RAO_Report_26Jun.html"
         )
 
-    workbook.save(out_path / "Consolidated_RAO_Report_Stg15Jun.xlsx")
+    workbook.save(out_path / "Consolidated_RAO_Report_26Jun.xlsx")
     print("All scenarios completed.")
 
 

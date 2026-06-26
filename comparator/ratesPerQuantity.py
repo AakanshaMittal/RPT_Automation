@@ -39,7 +39,7 @@ def extract_rpt_id(filename):
 
 
 def extract_tc(filename):
-    match = re.search(r"TC(\d+)", filename.upper())
+    match = re.search(r"TC(\d+[A-Z]?)", filename.upper())
     return match.group(1) if match else None
 
 
@@ -355,7 +355,7 @@ def main():
         if tc:
             file2_map[tc] = f
 
-    common_tcs = sorted(set(file1_map) & set(file2_map), key=int)
+    common_tcs = sorted(set(file1_map) & set(file2_map), key=str)
 
     workbook = Workbook()
     ws_summary = workbook.active
@@ -391,12 +391,12 @@ def main():
         )
 
         write_html_report(
-            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_Stg15Jun.html",
+            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_26Jun.html",
             mismatches, group_counter, extra1, extra2,
             file1.name, file2.name, missing1, missing2
         )
 
-    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_Stg15Jun.xlsx")
+    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_26Jun.xlsx")
     print("All scenarios completed.")
 
 

@@ -8,8 +8,8 @@ from collections import defaultdict
 from html import escape
  
 APP_FOLDER = r"data/outputSpecialityRpt/File1"
-EXCEL_FOLDER = r"data/outputSpecialityRpt/File2"
-OUTPUT_FOLDER = r"data/outputSpecialityRpt/Output"
+EXCEL_FOLDER = r"data/outputSpecialityRpt/RebateRefresh"
+OUTPUT_FOLDER = r"data/outputSpecialityRpt/RebateRefreshOutput"
 mapping_file = r"config/mapping.json"
  
  
@@ -344,7 +344,7 @@ def main():
 
         EXCEL_FILE = excel_map[tc]
  
-        OUTPUT_HTML = out_path / f"TC{tc}_Report_Stg15Jun.html"
+        OUTPUT_HTML = out_path / f"TC{tc}_Report_26Jun.html"
  
         print(f"Processing TC{tc}...")
  

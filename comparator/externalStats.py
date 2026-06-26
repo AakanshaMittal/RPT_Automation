@@ -16,9 +16,9 @@ BASE_PATH = Path("data/externalStats")
  
 FILE1_DIR = BASE_PATH / "File1"
 
-FILE2_DIR = BASE_PATH / "File2"
+FILE2_DIR = BASE_PATH / "RebateRefresh"
 
-OUTPUT_DIR = BASE_PATH / "Output"
+OUTPUT_DIR = BASE_PATH / "RebateRefreshOutput"
 
 MAPPING_FILE = "config/mapping.json"
  
@@ -459,7 +459,7 @@ def main():
 
                 file2_dict[tc].name,
 
-                OUTPUT_DIR / f"{tc}_External_Stg15Jun.html"
+                OUTPUT_DIR / f"{tc}_External_26Jun.html"
 
             )
  
@@ -469,7 +469,7 @@ def main():
 
         all_results,
 
-        OUTPUT_DIR / "Consolidated_External_Report_Stg15Jun.xlsx"
+        OUTPUT_DIR / "Consolidated_External_Report_26Jun.xlsx"
 
     )
  
