@@ -1,0 +1,316 @@
+import os
+import pandas as pd
+from openpyxl import load_workbook
+import html
+import requests
+
+TOLERANCE = 0.0001
+
+# =========================================================
+# CONFIGURATION
+# =========================================================
+API_BASE_URL = "https://actuarialhub-dev-api.optum.com/api/azure-blob/download/financeSummary/"
+
+API_ENDPOINTS = {   
+     5: "RPT6072999484647YM",
+     19: "RPT3354366772570ZF"
+    # 19: "RPT6936998921199VX"
+# 7: "RPT5778326415391WR",
+# 16: "RPT4916668589193MM",
+# 12: "RPT6005053739424UO",
+# 20: "RPT6369172094038YQ",
+# 4: "RPT5102510432402PT",
+# 11: "RPT9352764916055DM",
+# 17: "RPT6147838349725AQ"
+# 1:"RPT8144866384611ZC",
+# 2:"RPT5621045155116MQ",
+# 3 : "RPT6001956739171YP",
+# 4 : "RPT6675435528517RS",
+# 5 : "RPT8425438558663AN",
+# 6 : "RPT1676176927296BS",
+# 7 : "RPT5778326415391WR",
+# 8 : "RPT2602083498305GG",
+# 9 : "RPT2611325815634MP",
+# 10 : "RPT8077467244232BD",
+# 11 : "RPT9352764916055DM",
+# 12 : "RPT3569087553929AT",
+# 13 : "RPT1511618462593QI",
+# 14: "RPT7742757019314VB",
+# 15 : "RPT9135597151051ZB",
+
+# 9: "RPT2611325815634MP",
+# 15: "RPT4238213741826PC",
+# 16: "RPT2579918051352BZ"
+
+# 17: "RPT5063627014454ZD",
+# 18 : "RPT7645649907263TU",
+# 19 : "RPT3816552382848TK",
+# 20 : "RPT6369172094038YQ"
+ 
+ 
+    # 17: "RPT9518641008898FM"
+    # 20: "RPT1958363730057DJ"
+    # 4: "RPT6610742477102RP"
+    # 11: "RPT4044886397592RW"
+    #  21: "RPT8984896822403SS",
+    #  7: "RPT6348854143852QW"
+    # 4: "RPT5321116414285FC"
+    # 1: "RPT8028197735728WS"
+# 1: "RPT5159688887210QU",
+# 2: "RPT6173408222224NJ",
+# 3: "RPT6430463565288YY",
+# 4: "RPT9093292786022KE",
+# 5: "RPT1404880669668VS",
+# 6: "RPT6412645171166EW",
+# 7: "RPT5340512932842BY",
+# 8: "RPT8967267773183KS",
+# 9: "RPT1671330770979CF",
+# 10: "RPT8107702707903CZ",
+# 11: "RPT6773589255724NR",
+# 12: "RPT3148035460123ML",
+# 13: "RPT3450970068231MO",
+# 14: "RPT6649501860139LC",
+# 15: "RPT7248685682065JU",
+# 16: "RPT6154188535123LI",
+# 17: "RPT6724285789423RU",
+# 18: "RPT7166282902057JT",
+# 19: "RPT7014190005476SB",
+# 20: "RPT5738801382770ZX"
+#  21: "RPT4518612165658NM"
+    
+}
+APP_FOLDER = "./FinanceSummary_App_FOLDER_Dev_July8"
+EXC_FOLDER = "./FinanceSummary_Exc_RebateRefresh"
+REPORT_FOLDER = "./comparison_reports_RebateRefresh_July8"
+
+# APP_FOLDER = "./FinanceSummary_App_FOLDER_Stg_July2"
+# EXC_FOLDER = "./FinanceSummary_Exc_RebateRefresh_Resubmission"
+# REPORT_FOLDER = "./comparison_reports_RebateRefresh_Resubmission_July2"
+
+# =========================================================
+# DOWNLOAD APP FILES FROM API
+# =========================================================
+def download_app_files():
+    os.makedirs(APP_FOLDER, exist_ok=True)
+
+    for tc_no in sorted(API_ENDPOINTS.keys()):
+        endpoint = API_ENDPOINTS[tc_no]
+        url = f"{API_BASE_URL}{endpoint}"
+
+        print(f"⬇️ Downloading APP file for T{tc_no}: {url}")
+
+        response = requests.get(url, timeout=30, verify=False)
+
+        if response.status_code != 200:
+            raise RuntimeError(f"Failed to download APP file for T{tc_no}")
+
+        file_path = os.path.join(APP_FOLDER, f"T{tc_no}_App.xlsx")
+        with open(file_path, "wb") as f:
+            f.write(response.content)
+
+        print(f"✅ Saved APP file: {file_path}")
+
+# =========================================================
+# READ KEY–VALUE PAIRS
+# =========================================================
+def read_key_values(ws, start_row=2, end_row=6):
+    keyvals = {}
+    for row in ws.iter_rows(min_row=start_row, max_row=end_row, values_only=True):
+        if row[0]:
+            key = str(row[0]).strip()
+            value = "" if row[1] is None else str(row[1]).strip()
+            keyvals[key] = value
+    return keyvals
+
+# =========================================================
+# EXTRACT TABLES
+# =========================================================
+def extract_tables(ws, start_row=7):
+    tables = []
+    current_data = []
+
+    for row in ws.iter_rows(min_row=start_row, values_only=True):
+        if all(cell is None for cell in row):
+            if current_data:
+                tables.append(pd.DataFrame(current_data).fillna(""))
+                current_data = []
+        else:
+            current_data.append(row)
+
+    if current_data:
+        tables.append(pd.DataFrame(current_data).fillna(""))
+
+    return tables
+
+# =========================================================
+# NUMERIC CHECK
+# =========================================================
+def is_numeric(val):
+    try:
+        float(val)
+        return True
+    except:
+        return False
+
+# =========================================================
+# KEY–VALUE COMPARISON
+# =========================================================
+def compare_key_values(kv1, kv2):
+    mismatches = []
+    keys = set(kv1.keys()).union(kv2.keys())
+
+    for key in keys:
+        v1 = kv1.get(key, "<Missing>")
+        v2 = kv2.get(key, "<Missing>")
+        if v1 != v2:
+            mismatches.append((key, v1, v2))
+
+    return mismatches
+
+# =========================================================
+# TABLE COMPARISON
+# =========================================================
+def compare_tables(t1, t2):
+    max_r = max(t1.shape[0], t2.shape[0])
+    max_c = max(t1.shape[1], t2.shape[1])
+
+    mismatch_matrix = [[False] * max_c for _ in range(max_r)]
+    mismatches = []
+
+    for r in range(max_r):
+        for c in range(max_c):
+            v1 = t1.iloc[r, c] if r < t1.shape[0] and c < t1.shape[1] else ""
+            v2 = t2.iloc[r, c] if r < t2.shape[0] and c < t2.shape[1] else ""
+
+            if v1 == "" and v2 == "":
+                continue
+
+            if is_numeric(v1) and is_numeric(v2):
+                if abs(float(v1) - float(v2)) > TOLERANCE:
+                    mismatch_matrix[r][c] = True
+                    mismatches.append((r + 1, c + 1, v1, v2))
+            else:
+                if str(v1) != str(v2):
+                    mismatch_matrix[r][c] = True
+                    mismatches.append((r + 1, c + 1, v1, v2))
+
+    return mismatches, mismatch_matrix, max_r, max_c
+
+# =========================================================
+# HTML REPORT
+# =========================================================
+def html_format_table(t1, t2, mismatch_matrix, rows, cols):
+    lines = ["<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse;'>"]
+
+    for r in range(rows):
+        lines.append("<tr>")
+        for c in range(cols):
+            v1 = t1.iloc[r, c] if r < t1.shape[0] and c < t1.shape[1] else ""
+            v2 = t2.iloc[r, c] if r < t2.shape[0] and c < t2.shape[1] else ""
+
+            bg = "background-color:#ffb3b3;" if mismatch_matrix[r][c] else ""
+            content = f"{html.escape(str(v1))} | {html.escape(str(v2))}"
+            lines.append(f"<td style='{bg}'>{content}</td>")
+        lines.append("</tr>")
+
+    lines.append("</table>")
+    return "\n".join(lines)
+
+def generate_html_report(key_mismatches, table_data, file1, file2, output):
+    html_parts = []
+
+    html_parts.append("<h1>Excel Comparison Report</h1>")
+    html_parts.append(f"<p><b>File 1:</b> {file1}<br><b>File 2:</b> {file2}</p>")
+
+    html_parts.append("<h2>Key–Value Mismatches</h2>")
+    if not key_mismatches:
+        html_parts.append("<p>No mismatches ✅</p>")
+    else:
+        html_parts.append("<table border='1'><tr><th>Key</th><th>File1</th><th>File2</th></tr>")
+        for k, v1, v2 in key_mismatches:
+            html_parts.append(f"<tr><td>{k}</td><td>{v1}</td><td>{v2}</td></tr>")
+        html_parts.append("</table>")
+
+    html_parts.append("<h2>Tables</h2>")
+    for idx, (mis, matrix, rows, cols, t1, t2) in enumerate(table_data, start=1):
+        html_parts.append(f"<h3>Table {idx}</h3>")
+        html_parts.append(html_format_table(t1, t2, matrix, rows, cols))
+
+    with open(output, "w", encoding="utf-8") as f:
+        f.write("\n".join(html_parts))
+
+# =========================================================
+# CONSOLIDATED EXCEL REPORT
+# =========================================================
+def generate_consolidated_excel(results, output_file):
+    df = pd.DataFrame(results)
+
+    with pd.ExcelWriter(output_file, engine="openpyxl") as writer:
+        df.to_excel(writer, index=False, sheet_name="Summary")
+
+    print(f"✅ Consolidated Excel report generated: {output_file}")
+
+# =========================================================
+# MAIN
+# =========================================================
+if __name__ == "__main__":
+
+    os.makedirs(REPORT_FOLDER, exist_ok=True)
+    download_app_files()
+
+    consolidated_results = []
+
+    for tc_no in sorted(API_ENDPOINTS.keys()):
+        app_file = os.path.join(APP_FOLDER, f"T{tc_no}_App.xlsx")
+        exc_file = os.path.join(EXC_FOLDER, f"T{tc_no}_Exc.xlsx")
+
+        print(f"\n🔍 Comparing T{tc_no}")
+
+        if not os.path.exists(app_file) or not os.path.exists(exc_file):
+            print("❌ Missing file")
+            continue
+
+        report_path = os.path.join(REPORT_FOLDER, f"T{tc_no}_Report.html")
+
+        wb1 = load_workbook(app_file)
+        wb2 = load_workbook(exc_file)
+
+        ws1 = wb1.active
+        ws2 = wb2.active
+
+        kv1 = read_key_values(ws1)
+        kv2 = read_key_values(ws2)
+        key_mismatches = compare_key_values(kv1, kv2)
+
+        tables1 = extract_tables(ws1)
+        tables2 = extract_tables(ws2)
+
+        table_mismatch_count = 0
+        max_tables = max(len(tables1), len(tables2))
+
+        for i in range(max_tables):
+            t1 = tables1[i] if i < len(tables1) else pd.DataFrame()
+            t2 = tables2[i] if i < len(tables2) else pd.DataFrame()
+            mismatches, _, _, _ = compare_tables(t1, t2)
+            table_mismatch_count += len(mismatches)
+
+        consolidated_results.append({
+            "Test Case": f"T{tc_no}",
+            "Key Mismatches": len(key_mismatches),
+            "Table Mismatches": table_mismatch_count,
+            "Status": "PASS" if len(key_mismatches) == 0 and table_mismatch_count == 0 else "FAIL"
+        })
+
+        # Existing HTML reporting
+        table_data = []
+        for i in range(max_tables):
+            t1 = tables1[i] if i < len(tables1) else pd.DataFrame()
+            t2 = tables2[i] if i < len(tables2) else pd.DataFrame()
+            table_data.append((*compare_tables(t1, t2), t1, t2))
+
+        generate_html_report(key_mismatches, table_data, app_file, exc_file, report_path)
+
+    consolidated_file = os.path.join(REPORT_FOLDER, "Consolidated_Report.xlsx")
+    generate_consolidated_excel(consolidated_results, consolidated_file)
+
+    print("\n✅ All comparisons completed successfully.")

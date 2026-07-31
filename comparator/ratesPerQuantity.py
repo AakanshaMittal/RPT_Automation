@@ -17,8 +17,8 @@ except Exception:
 
 BASE_PATH = Path("data/ratesPerQuantity")
 FILE1_FOLDER = BASE_PATH / "File1"
-FILE2_FOLDER = BASE_PATH / "File2"
-OUTPUT_FOLDER = BASE_PATH / "Output"
+FILE2_FOLDER = BASE_PATH / "RebateRefresh"
+OUTPUT_FOLDER = BASE_PATH / "RebateRefreshOutput"
 mapping_file = r"config/mapping.json"
 
 
@@ -391,12 +391,12 @@ def main():
         )
 
         write_html_report(
-            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_26Jun.html",
+            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_27JulPROD.html",
             mismatches, group_counter, extra1, extra2,
             file1.name, file2.name, missing1, missing2
         )
 
-    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_26Jun.xlsx")
+    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_27JulPROD.xlsx")
     print("All scenarios completed.")
 
 

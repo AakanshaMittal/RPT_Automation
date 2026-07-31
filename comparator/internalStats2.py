@@ -561,7 +561,7 @@ def main():
 
                 file2_dict[tc].name,
 
-                OUTPUT_DIR / f"{tc}_Internal2_26Jun.html"
+                OUTPUT_DIR / f"{tc}_Internal2_27JulPROD.html"
 
             )
  
@@ -571,7 +571,7 @@ def main():
 
         all_results,
 
-        OUTPUT_DIR / "Consolidated_Report_26Jun.xlsx"
+        OUTPUT_DIR / "Consolidated_Report_27JulPROD.xlsx"
 
     )
  

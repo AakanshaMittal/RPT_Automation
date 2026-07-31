@@ -18,7 +18,7 @@ OUTPUT_FOLDER = f"{BASE_DATA_PATH}/rateBuildUp/RebateRefreshOutput"
  
 MAPPING_FILE = "config/mapping.json"
  
-TOLERANCE = 0.0001
+TOLERANCE = 0.000001
  
 # =========================
 
@@ -998,7 +998,7 @@ def main():
  
         with open(
 
-            out_path / f"TC{tc}_RBU_Report_26Jun.html",
+            out_path / f"TC{tc}_RBU_Report_7decimal.html",
 
             "w",
 
@@ -1014,7 +1014,7 @@ def main():
  
     summary_df.to_excel(
 
-        out_path / "RBU_Execution_Summary26Jun.xlsx",
+        out_path / "RBU_Execution_Summary27JulPROD.xlsx",
 
         index=False
 
