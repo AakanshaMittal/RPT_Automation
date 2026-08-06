@@ -17,8 +17,8 @@ except Exception:
 
 BASE_PATH = Path("data/ratesPerQuantity")
 FILE1_FOLDER = BASE_PATH / "File1"
-FILE2_FOLDER = BASE_PATH / "RebateRefresh"
-OUTPUT_FOLDER = BASE_PATH / "RebateRefreshOutput"
+FILE2_FOLDER = BASE_PATH / "File2"
+OUTPUT_FOLDER = BASE_PATH / "Output"
 mapping_file = r"config/mapping.json"
 
 
@@ -71,7 +71,7 @@ def is_number(val: str) -> bool:
 
 def numeric_major_mismatch(v1: str, v2: str) -> bool:
     try:
-        return abs(float(clean_numeric(v1)) - float(clean_numeric(v2))) > 0.0001
+        return abs(float(clean_numeric(v1)) - float(clean_numeric(v2))) > 0.000001
     except Exception:
         return False
 
@@ -391,12 +391,12 @@ def main():
         )
 
         write_html_report(
-            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_27JulPROD.html",
+            OUTPUT_FOLDER / f"TC{tc}_RPQ_Report_4Aug_6D_RBU_Stg.html",
             mismatches, group_counter, extra1, extra2,
             file1.name, file2.name, missing1, missing2
         )
 
-    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_27JulPROD.xlsx")
+    workbook.save(OUTPUT_FOLDER / "Consolidated_RPQ_Report_6D_RBU_Stg.xlsx")
     print("All scenarios completed.")
 
 

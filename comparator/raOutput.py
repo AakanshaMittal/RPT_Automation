@@ -12,7 +12,7 @@ file2_folder = r"data/raOutput/RebateRefresh"
 output_folder = r"data/raOutput/RebateRefreshOutput"
 mapping_file = r"config/mapping.json"
 
-TOL = "0.0000001"
+TOL = "0.000001"
 
 start_col_file1 = 0
 start_col_file2 = 0
@@ -343,10 +343,10 @@ def main():
         generate_html_report(
             extra1, extra2, mismatches, summary, ndc_map,
             file1.name, file2.name,
-            out_path / f"TC{tc}_RAO_Report_27JulPROD.html"
+            out_path / f"TC{tc}_RAO_Report_6D_4Aug_RBU_Stg.html"
         )
 
-    workbook.save(out_path / "Consolidated_RAO_Report_27JulPROD.xlsx")
+    workbook.save(out_path / "Consolidated_RAO_Report_6D_4Aug_RBU_Stg.xlsx")
     print("All scenarios completed.")
 
 

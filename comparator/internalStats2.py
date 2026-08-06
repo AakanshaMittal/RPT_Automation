@@ -24,7 +24,7 @@ MAPPING_FILE = "config/mapping.json"
  
 # Tolerance
 
-TOLERANCE = 0.0001
+TOLERANCE = 0.000001
  
 os.makedirs(OUTPUT_DIR, exist_ok=True)
  
@@ -561,7 +561,7 @@ def main():
 
                 file2_dict[tc].name,
 
-                OUTPUT_DIR / f"{tc}_Internal2_27JulPROD.html"
+                OUTPUT_DIR / f"{tc}_Internal2_6D_4Aug_RBU_Stg.html"
 
             )
  
@@ -571,7 +571,7 @@ def main():
 
         all_results,
 
-        OUTPUT_DIR / "Consolidated_Report_27JulPROD.xlsx"
+        OUTPUT_DIR / "Consolidated_Report_6D_4Aug_RBU_Stg.xlsx"
 
     )
  

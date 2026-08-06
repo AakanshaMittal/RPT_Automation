@@ -206,7 +206,7 @@ def extract_structure(df):
  
     return structure
  
-def compare_tables(t1, t2, tol=0.0001):
+def compare_tables(t1, t2, tol=0.000001):
 
     mismatches = []
 
@@ -360,7 +360,7 @@ def main():
  
         html = generate_html(results)
  
-        output_file = out_path / f"TC{tc}_FMS_Report_27JulPROD.html"
+        output_file = out_path / f"TC{tc}_FMS_Report_4Aug_6D_RBU_Stg.html"
  
         with open(output_file, "w") as f:
 

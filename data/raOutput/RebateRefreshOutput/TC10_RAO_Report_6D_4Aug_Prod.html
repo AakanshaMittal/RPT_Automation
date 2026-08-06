@@ -1,0 +1,4729 @@
+<html><head><title>RA Output Validation</title>
+<style>
+body{font-family:Arial;padding:20px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ccc;padding:6px;font-size:12px}
+th{background:#f2f2f2}
+.diff{background:#ffd6d6;font-weight:600}
+</style></head><body>
+<h1>RA Output Validation Report</h1>
+<p><b>Total mismatches:</b> 212</p>
+<p><b>Extra rows in RPT_RPT6423284793012SH_raOutput.xlsx:</b> 0</p>
+<p><b>Extra rows in TC10_Exc_RAO_SOT_9Apr.xlsx:</b> 20</p>
+<h2>Mismatch Summary (with NDCs)</h2>
+<table><tr><th>Header</th><th>Mismatch Count</th><th>Affected NDCs</th></tr>
+<tr><td>Shifted_QTY_Selected Excl Desc</td><td>51</td><td>169413013, 169418113, 169477212, 173085910, 173088210, 173088710, 3089321, 3089421, 310620530, 310621030, 310621090, 456120130, 456120330, 50458057830, 50458057930, 50458057990, 50458058030, 58406003204, 597015230, 597015290, 597015330, 61874011530, 78069620, 78077720</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>17</td><td>23320503, 23320505, 24208050402, 24208050405, 456120130, 456120330, 469260230, 64764072030, 64764075030, 70727049725</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>14</td><td>23320503, 23320505, 24208050402, 24208050405, 469260230, 64764072030, 64764075030, 70727049725</td></tr>
+<tr><td>Post-Shift + Hep C adj_Scripts_10/26-09/27</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_Scripts_10/27-09/28</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_Scripts_10/28-09/29</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_Scripts_10/29-09/30</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_Scripts_10/30-09/31</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_QTY_10/26-09/27</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_QTY_10/27-09/28</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_QTY_10/28-09/29</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_QTY_10/29-09/30</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_QTY_10/30-09/31</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP_10/26-09/27</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP_10/27-09/28</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP_10/28-09/29</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP_10/29-09/30</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP_10/30-09/31</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26-09/27</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27-09/28</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28-09/29</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29-09/30</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30-09/31</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26-09/27</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27-09/28</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28-09/29</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29-09/30</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30-09/31</td><td>5</td><td>2247180, 2248480, 2249580, 2250680</td></tr>
+<tr><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26-09/27</td><td>5</td><td>456120130, 456120330, 469260230</td></tr>
+</table>
+<h2>Value Mismatches</h2>
+<table><tr><th>Row Key</th><th>Column</th><th>File 1</th><th>File 2</th></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/26-09/27</td><td>0.4453473256941674</td><td>0.9898483282809559</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/27-09/28</td><td>0.5566841571177091</td><td>1.2373104103511947</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/28-09/29</td><td>0.668020988541251</td><td>1.4847724924214336</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/29-09/30</td><td>0.8016251862495013</td><td>1.7817269909057205</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/30-09/31</td><td>0.9619502234994016</td><td>2.1380723890868647</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/26-09/27</td><td>2.672083954165005</td><td>5.939089969685735</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/27-09/28</td><td>3.340104942706255</td><td>7.423862462107167</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/28-09/29</td><td>4.008125931247506</td><td>8.908634954528603</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/29-09/30</td><td>4.809751117497008</td><td>10.690361945434324</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/30-09/31</td><td>5.77170134099641</td><td>12.828434334521189</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/26-09/27</td><td>$1800.3695767488136</td><td>4001.5796952523274</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/27-09/28</td><td>$2305.2517180804243</td><td>5123.752693141174</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/28-09/29</td><td>$2829.716770158841</td><td>6289.451519854492</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/29-09/30</td><td>$3467.943541254255</td><td>7708.002089229162</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/30-09/31</td><td>$4250.118786500321</td><td>9446.498795643101</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26-09/27</td><td>$1800.3695767488136</td><td>4001.5796952523274</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27-09/28</td><td>$2305.2517180804243</td><td>5123.752693141174</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28-09/29</td><td>$2829.716770158841</td><td>6289.451519854492</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29-09/30</td><td>$3467.943541254255</td><td>7708.002089229162</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30-09/31</td><td>$4250.118786500321</td><td>9446.498795643101</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26-09/27</td><td>$1800.3695767488136</td><td>4001.5796952523274</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27-09/28</td><td>$2305.2517180804243</td><td>5123.752693141174</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28-09/29</td><td>$2829.716770158841</td><td>6289.451519854492</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29-09/30</td><td>$3467.943541254255</td><td>7708.002089229162</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30-09/31</td><td>$4250.118786500321</td><td>9446.498795643101</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/26-09/27</td><td>0.2226736628470837</td><td>0.49492416414047796</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/27-09/28</td><td>0.2783420785588546</td><td>0.6186552051755974</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/28-09/29</td><td>0.3340104942706255</td><td>0.7423862462107168</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/29-09/30</td><td>0.4008125931247506</td><td>0.8908634954528603</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_Scripts_10/30-09/31</td><td>0.4809751117497008</td><td>1.0690361945434323</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/26-09/27</td><td>1.336041977082502</td><td>2.9695449848428677</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/27-09/28</td><td>1.670052471353127</td><td>3.7119312310535837</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/28-09/29</td><td>2.004062965623753</td><td>4.4543174772643015</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/29-09/30</td><td>2.404875558748504</td><td>5.345180972717162</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_QTY_10/30-09/31</td><td>2.885850670498205</td><td>6.4142171672605945</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/26-09/27</td><td>$900.1847883744068</td><td>2000.7898476261637</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/27-09/28</td><td>$1152.6258590402122</td><td>2561.876346570587</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/28-09/29</td><td>$1414.8583850794205</td><td>3144.725759927246</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/29-09/30</td><td>$1733.9717706271274</td><td>3854.001044614581</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP_10/30-09/31</td><td>$2125.0593932501606</td><td>4723.249397821551</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26-09/27</td><td>$900.1847883744068</td><td>2000.7898476261637</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27-09/28</td><td>$1152.6258590402122</td><td>2561.876346570587</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28-09/29</td><td>$1414.8583850794205</td><td>3144.725759927246</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29-09/30</td><td>$1733.9717706271274</td><td>3854.001044614581</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30-09/31</td><td>$2125.0593932501606</td><td>4723.249397821551</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26-09/27</td><td>$900.1847883744068</td><td>2000.7898476261637</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27-09/28</td><td>$1152.6258590402122</td><td>2561.876346570587</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28-09/29</td><td>$1414.8583850794205</td><td>3144.725759927246</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29-09/30</td><td>$1733.9717706271274</td><td>3854.001044614581</td></tr>
+<tr class='diff'><td>G5||2249580||ZEPBOUND||AGGREGATE||B||B||N||N||M||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30-09/31</td><td>$2125.0593932501606</td><td>4723.249397821551</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_Scripts_10/26-09/27</td><td>0.2226736628470837</td><td>0.49492416414047796</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_Scripts_10/27-09/28</td><td>0.2783420785588546</td><td>0.6186552051755974</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_Scripts_10/28-09/29</td><td>0.3340104942706255</td><td>0.7423862462107168</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_Scripts_10/29-09/30</td><td>0.4008125931247506</td><td>0.8908634954528603</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_Scripts_10/30-09/31</td><td>0.4809751117497008</td><td>1.0690361945434323</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_QTY_10/26-09/27</td><td>0.8906946513883348</td><td>1.9796966565619118</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_QTY_10/27-09/28</td><td>1.113368314235418</td><td>2.4746208207023894</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_QTY_10/28-09/29</td><td>1.336041977082502</td><td>2.969544984842867</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_QTY_10/29-09/30</td><td>1.603250372499003</td><td>3.563453981811441</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_QTY_10/30-09/31</td><td>1.923900446998803</td><td>4.276144778173729</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP_10/26-09/27</td><td>$600.1231922496046</td><td>1333.8598984174425</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP_10/27-09/28</td><td>$768.4172393601416</td><td>1707.9175643803915</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP_10/28-09/29</td><td>$943.2389233862802</td><td>2096.483839951497</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP_10/29-09/30</td><td>$1155.981180418085</td><td>2569.3340297430536</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP_10/30-09/31</td><td>$1416.7062621667737</td><td>3148.8329318810333</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26-09/27</td><td>$600.1231922496046</td><td>1333.8598984174425</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27-09/28</td><td>$768.4172393601416</td><td>1707.9175643803915</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28-09/29</td><td>$943.2389233862802</td><td>2096.483839951497</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29-09/30</td><td>$1155.981180418085</td><td>2569.3340297430536</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30-09/31</td><td>$1416.7062621667737</td><td>3148.8329318810333</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26-09/27</td><td>$600.1231922496046</td><td>1333.8598984174425</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27-09/28</td><td>$768.4172393601416</td><td>1707.9175643803915</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28-09/29</td><td>$943.2389233862802</td><td>2096.483839951497</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29-09/30</td><td>$1155.981180418085</td><td>2569.3340297430536</td></tr>
+<tr class='diff'><td>G5||2250680||ZEPBOUND||AGGREGATE||B||B||N||N||R||30</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30-09/31</td><td>$1416.7062621667737</td><td>3148.8329318810333</td></tr>
+<tr class=''><td>G5||3089421||ELIQUIS||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||3089421||ELIQUIS||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||23320505||LUMIGAN||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$17.020416304432676</td><td>17.44753853922636</td></tr>
+<tr class='diff'><td>G5||23320505||LUMIGAN||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$1026.790290894192</td><td>1027.217413128983</td></tr>
+<tr class=''><td>G5||78069620||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169413013||OZEMPIC||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169413013||OZEMPIC||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169418113||OZEMPIC||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169418113||OZEMPIC||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169477212||OZEMPIC||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||173088210||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||173088710||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||310621030||FARXIGA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||456120330||LINZESS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||456120330||LINZESS||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26-09/27</td><td>$3.9025597485518952</td><td>4.000493313242862</td></tr>
+<tr class='diff'><td>G5||456120330||LINZESS||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$78.21289636395066</td><td>78.31082992864143</td></tr>
+<tr class=''><td>G5||597015230||JARDIANCE||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||597015290||JARDIANCE||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||24208050402||VYZULTA||REBATABLE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$12.720499662365587</td><td>12.82469178338675</td></tr>
+<tr class='diff'><td>G5||24208050402||VYZULTA||REBATABLE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$545.3883482532273</td><td>545.4925403742469</td></tr>
+<tr class='diff'><td>G5||24208050402||VYZULTA||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$29.6818475562775</td><td>30.426704605264064</td></tr>
+<tr class='diff'><td>G5||24208050402||VYZULTA||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$1272.5734942682882</td><td>1273.3183513172714</td></tr>
+<tr class='diff'><td>G5||64764072030||TRINTELLIX||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$5.071870503805935</td><td>5.1606044775088</td></tr>
+<tr class='diff'><td>G5||64764072030||TRINTELLIX||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$184.47276724300087</td><td>184.56150121670373</td></tr>
+<tr class='diff'><td>G5||64764075030||TRINTELLIX||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$20.342813882337264</td><td>20.853310686410904</td></tr>
+<tr class='diff'><td>G5||64764075030||TRINTELLIX||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$737.946400839117</td><td>738.4568976431906</td></tr>
+<tr class='diff'><td>G5||70727049725||RHOPRESSA||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$59.115293131403135</td><td>60.149533824698224</td></tr>
+<tr class='diff'><td>G5||70727049725||RHOPRESSA||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$1424.8883154579617</td><td>1425.9225561512528</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/26-09/27</td><td>0.2226736628470837</td><td>0.49492416414047796</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/27-09/28</td><td>0.2783420785588546</td><td>0.6186552051755974</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/28-09/29</td><td>0.3340104942706255</td><td>0.7423862462107168</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/29-09/30</td><td>0.4008125931247506</td><td>0.8908634954528603</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/30-09/31</td><td>0.4809751117497008</td><td>1.0690361945434323</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/26-09/27</td><td>1.336041977082502</td><td>2.9695449848428677</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/27-09/28</td><td>1.670052471353127</td><td>3.7119312310535837</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/28-09/29</td><td>2.004062965623753</td><td>4.4543174772643015</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/29-09/30</td><td>2.404875558748504</td><td>5.345180972717162</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/30-09/31</td><td>2.885850670498205</td><td>6.4142171672605945</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/26-09/27</td><td>$900.1847883744068</td><td>2000.7898476261637</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/27-09/28</td><td>$1152.6258590402122</td><td>2561.876346570587</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/28-09/29</td><td>$1414.8583850794205</td><td>3144.725759927246</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/29-09/30</td><td>$1733.9717706271274</td><td>3854.001044614581</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/30-09/31</td><td>$2125.0593932501606</td><td>4723.249397821551</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26-09/27</td><td>$900.1847883744068</td><td>2000.7898476261637</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27-09/28</td><td>$1152.6258590402122</td><td>2561.876346570587</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28-09/29</td><td>$1414.8583850794205</td><td>3144.725759927246</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29-09/30</td><td>$1733.9717706271274</td><td>3854.001044614581</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30-09/31</td><td>$2125.0593932501606</td><td>4723.249397821551</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26-09/27</td><td>$900.1847883744068</td><td>2000.7898476261637</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27-09/28</td><td>$1152.6258590402122</td><td>2561.876346570587</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28-09/29</td><td>$1414.8583850794205</td><td>3144.725759927246</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29-09/30</td><td>$1733.9717706271274</td><td>3854.001044614581</td></tr>
+<tr class='diff'><td>G5||2248480||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30-09/31</td><td>$2125.0593932501606</td><td>4723.249397821551</td></tr>
+<tr class=''><td>G5||3089321||ELIQUIS||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||3089321||ELIQUIS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||3089421||ELIQUIS||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||23320503||LUMIGAN||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$27.676972346917864</td><td>28.371517654723277</td></tr>
+<tr class='diff'><td>G5||23320503||LUMIGAN||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$1641.8700623801215</td><td>1642.5646076879268</td></tr>
+<tr class=''><td>G5||173085910||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||173085910||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||173088210||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||173088710||TRELEGY ELLIPTA||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||310621030||FARXIGA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||310621030||FARXIGA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||456120330||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||456120330||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26-09/27</td><td>$23.35166939146753</td><td>23.760214210611792</td></tr>
+<tr class='diff'><td>G5||456120330||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$469.2136890838601</td><td>469.6222339030031</td></tr>
+<tr class='diff'><td>G5||469260230||MYRBETRIQ||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26-09/27</td><td>$20.205311534324682</td><td>20.558809830663204</td></tr>
+<tr class='diff'><td>G5||469260230||MYRBETRIQ||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$47.87812195643952</td><td>48.715764796775716</td></tr>
+<tr class='diff'><td>G5||469260230||MYRBETRIQ||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$1518.9209341903497</td><td>1520.1120753270202</td></tr>
+<tr class=''><td>G5||50458057930||XARELTO||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||50458058030||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||64764075030||TRINTELLIX||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$15.215611511417807</td><td>15.4818134325264</td></tr>
+<tr class='diff'><td>G5||64764075030||TRINTELLIX||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$553.4183017290027</td><td>553.6845036501113</td></tr>
+<tr class='diff'><td>G5||70727049725||RHOPRESSA||REBATABLE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$39.51677480882021</td><td>39.840452077208354</td></tr>
+<tr class='diff'><td>G5||70727049725||RHOPRESSA||REBATABLE||B||B||N||N||M||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$950.0321230265257</td><td>950.3558002949113</td></tr>
+<tr class='diff'><td>G5||70727049725||RHOPRESSA||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$9.879420594347572</td><td>10.12734168671389</td></tr>
+<tr class='diff'><td>G5||70727049725||RHOPRESSA||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$237.50825764877396</td><td>237.75617874113962</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/26-09/27</td><td>0.4453473256941674</td><td>0.9898483282809559</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/27-09/28</td><td>0.5566841571177091</td><td>1.2373104103511947</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/28-09/29</td><td>0.668020988541251</td><td>1.4847724924214336</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/29-09/30</td><td>0.8016251862495013</td><td>1.7817269909057205</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_Scripts_10/30-09/31</td><td>0.9619502234994016</td><td>2.1380723890868647</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/26-09/27</td><td>2.672083954165005</td><td>5.939089969685735</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/27-09/28</td><td>3.340104942706255</td><td>7.423862462107167</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/28-09/29</td><td>4.008125931247506</td><td>8.908634954528603</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/29-09/30</td><td>4.809751117497008</td><td>10.690361945434324</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_QTY_10/30-09/31</td><td>5.77170134099641</td><td>12.828434334521189</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/26-09/27</td><td>$1800.3695767488136</td><td>4001.5796952523274</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/27-09/28</td><td>$2305.2517180804243</td><td>5123.752693141174</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/28-09/29</td><td>$2829.716770158841</td><td>6289.451519854492</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/29-09/30</td><td>$3467.943541254255</td><td>7708.002089229162</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP_10/30-09/31</td><td>$4250.118786500321</td><td>9446.498795643101</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26-09/27</td><td>$1800.3695767488136</td><td>4001.5796952523274</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27-09/28</td><td>$2305.2517180804243</td><td>5123.752693141174</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28-09/29</td><td>$2829.716770158841</td><td>6289.451519854492</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29-09/30</td><td>$3467.943541254255</td><td>7708.002089229162</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30-09/31</td><td>$4250.118786500321</td><td>9446.498795643101</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26-09/27</td><td>$1800.3695767488136</td><td>4001.5796952523274</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27-09/28</td><td>$2305.2517180804243</td><td>5123.752693141174</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28-09/29</td><td>$2829.716770158841</td><td>6289.451519854492</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29-09/30</td><td>$3467.943541254255</td><td>7708.002089229162</td></tr>
+<tr class='diff'><td>G5||2247180||ZEPBOUND||AGGREGATE||B||B||N||N||R||90</td><td>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30-09/31</td><td>$4250.118786500321</td><td>9446.498795643101</td></tr>
+<tr class=''><td>G5||3089321||ELIQUIS||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||78077720||ENTRESTO||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169413013||OZEMPIC||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169418113||OZEMPIC||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169477212||OZEMPIC||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||169477212||OZEMPIC||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||173085910||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||173088210||BREO ELLIPTA||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||310620530||FARXIGA||AGGREGATE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||310620530||FARXIGA||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||310621090||FARXIGA||AGGREGATE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||456120130||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||456120130||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26-09/27</td><td>$11.675834695733766</td><td>11.880107105305896</td></tr>
+<tr class='diff'><td>G5||456120130||LINZESS||REBATABLE||B||B||N||N||R||90</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$234.60684454193006</td><td>234.81111695150156</td></tr>
+<tr class='diff'><td>G5||469260230||MYRBETRIQ||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26-09/27</td><td>$5.627894247367936</td><td>5.769124563073685</td></tr>
+<tr class='diff'><td>G5||469260230||MYRBETRIQ||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$13.335751179865802</td><td>13.670407850109132</td></tr>
+<tr class='diff'><td>G5||469260230||MYRBETRIQ||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$421.9740622882296</td><td>422.4499492741776</td></tr>
+<tr class=''><td>G5||597015230||JARDIANCE||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||597015230||JARDIANCE||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||597015330||JARDIANCE||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||597015330||JARDIANCE||ALTERNATIVE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||597015330||JARDIANCE||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||24208050405||VYZULTA||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$8.478215184493973</td><td>8.690973447975443</td></tr>
+<tr class='diff'><td>G5||24208050405||VYZULTA||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$363.5732511334335</td><td>363.786009396914</td></tr>
+<tr class=''><td>G5||50458057830||XARELTO||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||50458057930||XARELTO||ALTERNATIVE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||50458057930||XARELTO||ALTERNATIVE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||50458057990||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||50458058030||XARELTO||REBATABLE||B||B||N||N||M||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||50458058030||XARELTO||REBATABLE||B||B||N||N||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||58406003204||ENBREL SURECLICK||REBATABLE||B||B||Y||Y||R||90</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class=''><td>G5||61874011530||VRAYLAR||REBATABLE||B||B||N||N||R||30</td><td>Shifted_QTY_Selected Excl Desc</td><td>MFP 2026,2027</td><td>MFP 2026 & 2027</td></tr>
+<tr class='diff'><td>G5||64764072030||TRINTELLIX||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</td><td>$3.390468980389544</td><td>3.475551781068483</td></tr>
+<tr class='diff'><td>G5||64764072030||TRINTELLIX||REBATABLE||B||B||N||N||R||30</td><td>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</td><td>$122.99106680651948</td><td>123.07614960719843</td></tr>
+</table>
+<h2>Extra Rows</h2><h3>Only in File 1</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_10/26-09/27</th>
+      <th>Pre-Shift_Scripts_10/27-09/28</th>
+      <th>Pre-Shift_Scripts_10/28-09/29</th>
+      <th>Pre-Shift_Scripts_10/29-09/30</th>
+      <th>Pre-Shift_Scripts_10/30-09/31</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_10/26-09/27</th>
+      <th>Pre-Shift_QTY_10/27-09/28</th>
+      <th>Pre-Shift_QTY_10/28-09/29</th>
+      <th>Pre-Shift_QTY_10/29-09/30</th>
+      <th>Pre-Shift_QTY_10/30-09/31</th>
+      <th>Shifted_Scripts_10/26-09/27 CoT</th>
+      <th>Shifted_Scripts_10/26-09/27 No CoT</th>
+      <th>Shifted_Scripts_10/27-09/28</th>
+      <th>Shifted_Scripts_10/28-09/29</th>
+      <th>Shifted_Scripts_10/29-09/30</th>
+      <th>Shifted_Scripts_10/30-09/31</th>
+      <th>Shifted_QTY_10/26-09/27 CoT</th>
+      <th>Shifted_QTY_10/26-09/27 No CoT</th>
+      <th>Shifted_QTY_10/27-09/28</th>
+      <th>Shifted_QTY_10/28-09/29</th>
+      <th>Shifted_QTY_10/29-09/30</th>
+      <th>Shifted_QTY_10/30-09/31</th>
+      <th>Shifted_QTY_Selected Exclusion Ind</th>
+      <th>Shifted_QTY_Selected Excl Desc</th>
+      <th>Shifted_QTY_Exclusion Year Ind</th>
+      <th>Shifted_QTY_Selected Generic Ind</th>
+      <th>Shifted_QTY_Selected Specialty Ind</th>
+      <th>Shifted_QTY_Selected Sp Inclusion Ind</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_QTY_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_QTY_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_QTY_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_QTY_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_QTY_10/30-09/31</th>
+      <th>Pre-Shift_AWP_10/26-09/27</th>
+      <th>Pre-Shift_AWP_10/27-09/28</th>
+      <th>Pre-Shift_AWP_10/28-09/29</th>
+      <th>Pre-Shift_AWP_10/29-09/30</th>
+      <th>Pre-Shift_AWP_10/30-09/31</th>
+      <th>Pre-Shift_Base_10/26-09/27</th>
+      <th>Pre-Shift_Base_10/27-09/28</th>
+      <th>Pre-Shift_Base_10/28-09/29</th>
+      <th>Pre-Shift_Base_10/29-09/30</th>
+      <th>Pre-Shift_Base_10/30-09/31</th>
+      <th>Pre-Shift_MAF_10/26-09/27</th>
+      <th>Pre-Shift_MAF_10/27-09/28</th>
+      <th>Pre-Shift_MAF_10/28-09/29</th>
+      <th>Pre-Shift_MAF_10/29-09/30</th>
+      <th>Pre-Shift_MAF_10/30-09/31</th>
+      <th>Pre-Shift_PPL_10/26-09/27</th>
+      <th>Pre-Shift_PPL_10/27-09/28</th>
+      <th>Pre-Shift_PPL_10/28-09/29</th>
+      <th>Pre-Shift_PPL_10/29-09/30</th>
+      <th>Pre-Shift_PPL_10/30-09/31</th>
+      <th>Pre-Shift_PPA_10/26-09/27</th>
+      <th>Pre-Shift_PPA_10/27-09/28</th>
+      <th>Pre-Shift_PPA_10/28-09/29</th>
+      <th>Pre-Shift_PPA_10/29-09/30</th>
+      <th>Pre-Shift_PPA_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_AWP_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_AWP_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_AWP_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_AWP_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_AWP_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_Base_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_Base_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_Base_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_Base_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_Base_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_MAF_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_MAF_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_MAF_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_MAF_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_MAF_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_PPL_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_PPL_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_PPL_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_PPL_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_PPL_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_PPA_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_PPA_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_PPA_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_PPA_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_PPA_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/30-09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/26-09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/27-09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/28-09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/29-09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/30-09/31</th>
+      <th>Pre-Shift_MAF Adjustement_10/26-09/27</th>
+      <th>Pre-Shift_MAF Adjustement_10/27-09/28</th>
+      <th>Pre-Shift_MAF Adjustement_10/28-09/29</th>
+      <th>Pre-Shift_MAF Adjustement_10/29-09/30</th>
+      <th>Pre-Shift_MAF Adjustement_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/30-09/31</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/26-09/27</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/27-09/28</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/28-09/29</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/29-09/30</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30-09/31</th>
+      <th>Post-Shift + Hep C adj_Base&nbsp;&nbsp;w/o Biosim Adj_10/26-09/27</th>
+      <th>Post-Shift + Hep C adj_Base&nbsp;&nbsp;w/o Biosim Adj_10/27-09/28</th>
+      <th>Post-Shift + Hep C adj_Base&nbsp;&nbsp;w/o Biosim Adj_10/28-09/29</th>
+      <th>Post-Shift + Hep C adj_Base&nbsp;&nbsp;w/o Biosim Adj_10/29-09/30</th>
+      <th>Post-Shift + Hep C adj_Base&nbsp;&nbsp;w/o Biosim Adj_10/30-09/31</th>
+      <th>Pre-MFP Adjustment Rebates_10/26-09/27</th>
+      <th>Pre-MFP Adjustment Rebates_10/27-09/28</th>
+      <th>Pre-MFP Adjustment Rebates_10/28-09/29</th>
+      <th>Pre-MFP Adjustment Rebates_10/29-09/30</th>
+      <th>Pre-MFP Adjustment Rebates_10/30-09/31</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h3>Only in File 2</h3>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>__ROW_KEY__</th>
+      <th>Formulary</th>
+      <th>NDC11</th>
+      <th>Drug Name</th>
+      <th>Drug Type</th>
+      <th>G/B Medispan w Override</th>
+      <th>G/B (Alternative)</th>
+      <th>Specialty Ind (ORx Std)</th>
+      <th>Specialty Ind (Alternative)</th>
+      <th>Mail Ind</th>
+      <th>DS Range</th>
+      <th>Sp Re-Class Code</th>
+      <th>Exclusion Code</th>
+      <th>Inclusion Code</th>
+      <th>MSB Indicator (Shift to Gs)</th>
+      <th>Maint Drug</th>
+      <th>340B Rejection Fctr</th>
+      <th>Therapeutic Class</th>
+      <th>Pre-Shift_Days Supply_Base Yr</th>
+      <th>Pre-Shift_AWP_Base Yr</th>
+      <th>Pre-Shift_Scripts_Base Yr</th>
+      <th>Pre-Shift_Scripts_10/26 - 09/27</th>
+      <th>Pre-Shift_Scripts_10/27 - 09/28</th>
+      <th>Pre-Shift_Scripts_10/28 - 09/29</th>
+      <th>Pre-Shift_Scripts_10/29 - 09/30</th>
+      <th>Pre-Shift_Scripts_10/30 - 09/31</th>
+      <th>Pre-Shift_QTY_Base Yr</th>
+      <th>Pre-Shift_QTY_10/26 - 09/27</th>
+      <th>Pre-Shift_QTY_10/27 - 09/28</th>
+      <th>Pre-Shift_QTY_10/28 - 09/29</th>
+      <th>Pre-Shift_QTY_10/29 - 09/30</th>
+      <th>Pre-Shift_QTY_10/30 - 09/31</th>
+      <th>Shifted_Scripts_10/26 - 09/27 CoT</th>
+      <th>Shifted_Scripts_10/26 - 09/27 No CoT</th>
+      <th>Shifted_Scripts_10/27 - 09/28</th>
+      <th>Shifted_Scripts_10/28 - 09/29</th>
+      <th>Shifted_Scripts_10/29 - 09/30</th>
+      <th>Shifted_Scripts_10/30 - 09/31</th>
+      <th>Shifted_QTY_10/26 - 09/27 CoT</th>
+      <th>Shifted_QTY_10/26 - 09/27 No CoT</th>
+      <th>Shifted_QTY_10/27 - 09/28</th>
+      <th>Shifted_QTY_10/28 - 09/29</th>
+      <th>Shifted_QTY_10/29 - 09/30</th>
+      <th>Shifted_QTY_10/30 - 09/31</th>
+      <th>EMPTY_COL_43</th>
+      <th>Shifted_QTY_Selected Exclusion Ind</th>
+      <th>Shifted_QTY_Selected Excl Desc</th>
+      <th>Shifted_QTY_Exclusion Year Ind</th>
+      <th>Shifted_QTY_Selected Generic Ind</th>
+      <th>Shifted_QTY_Selected Specialty Ind</th>
+      <th>Shifted_QTY_Selected Sp Inclusion Ind</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_Scripts_10/30 - 09/31</th>
+      <th>Post-Shift + Hep C adj_QTY_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_QTY_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_QTY_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_QTY_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_QTY_10/30 - 09/31</th>
+      <th>EMPTY_COL_60</th>
+      <th>Pre-Shift_AWP_10/26 - 09/27</th>
+      <th>Pre-Shift_AWP_10/27 - 09/28</th>
+      <th>Pre-Shift_AWP_10/28 - 09/29</th>
+      <th>Pre-Shift_AWP_10/29 - 09/30</th>
+      <th>Pre-Shift_AWP_10/30 - 09/31</th>
+      <th>Pre-Shift_Base_10/26 - 09/27</th>
+      <th>Pre-Shift_Base_10/27 - 09/28</th>
+      <th>Pre-Shift_Base_10/28 - 09/29</th>
+      <th>Pre-Shift_Base_10/29 - 09/30</th>
+      <th>Pre-Shift_Base_10/30 - 09/31</th>
+      <th>Pre-Shift_MAF_10/26 - 09/27</th>
+      <th>Pre-Shift_MAF_10/27 - 09/28</th>
+      <th>Pre-Shift_MAF_10/28 - 09/29</th>
+      <th>Pre-Shift_MAF_10/29 - 09/30</th>
+      <th>Pre-Shift_MAF_10/30 - 09/31</th>
+      <th>Pre-Shift_PPL_10/26 - 09/27</th>
+      <th>Pre-Shift_PPL_10/27 - 09/28</th>
+      <th>Pre-Shift_PPL_10/28 - 09/29</th>
+      <th>Pre-Shift_PPL_10/29 - 09/30</th>
+      <th>Pre-Shift_PPL_10/30 - 09/31</th>
+      <th>Pre-Shift_PPA_10/26 - 09/27</th>
+      <th>Pre-Shift_PPA_10/27 - 09/28</th>
+      <th>Pre-Shift_PPA_10/28 - 09/29</th>
+      <th>Pre-Shift_PPA_10/29 - 09/30</th>
+      <th>Pre-Shift_PPA_10/30 - 09/31</th>
+      <th>EMPTY_COL_86</th>
+      <th>Post-Shift + Hep C adj_AWP_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_AWP_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_AWP_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_AWP_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_AWP_10/30 - 09/31</th>
+      <th>Post-Shift + Hep C adj_Base_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_Base_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_Base_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_Base_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_Base_10/30 - 09/31</th>
+      <th>Post-Shift + Hep C adj_MAF_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_MAF_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_MAF_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_MAF_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_MAF_10/30 - 09/31</th>
+      <th>Post-Shift + Hep C adj_PPL_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_PPL_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_PPL_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_PPL_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_PPL_10/30 - 09/31</th>
+      <th>Post-Shift + Hep C adj_PPA_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_PPA_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_PPA_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_PPA_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_PPA_10/30 - 09/31</th>
+      <th>EMPTY_COL_112</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_AWP_10/30 - 09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Base_10/30 - 09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_MAF_10/30 - 09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPL_10/30 - 09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_PPA_10/30 - 09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Total_10/30 - 09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_Rebatable Indicator_10/30 - 09/31</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/26 - 09/27</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/27 - 09/28</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/28 - 09/29</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/29 - 09/30</th>
+      <th>Includes Recontracting Lift with Shift and Annualization Applied (Not recommended to be used on a drug level, only in aggregate!)_WAC (Rebatable)_10/30 - 09/31</th>
+      <th>EMPTY_COL_153</th>
+      <th>Pre-Shift_MAF Adjustement_10/26 - 09/27</th>
+      <th>Pre-Shift_MAF Adjustement_10/27 - 09/28</th>
+      <th>Pre-Shift_MAF Adjustement_10/28 - 09/29</th>
+      <th>Pre-Shift_MAF Adjustement_10/29 - 09/30</th>
+      <th>Pre-Shift_MAF Adjustement_10/30 - 09/31</th>
+      <th>EMPTY_COL_159</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_MAF Adjustement_10/30 - 09/31</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_Base Adjustment_10/30 - 09/31</th>
+      <th>EMPTY_COL_170</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/26 - 09/27</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/27 - 09/28</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/28 - 09/29</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/29 - 09/30</th>
+      <th>Pre-Shift_Base/MAF Adjustment $_10/30 - 09/31</th>
+      <th>EMPTY_COL_176</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_Base/MAF Adjustment $_10/30 - 09/31</th>
+      <th>EMPTY_COL_182</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_AWP w/o Biosim Adj_10/30 - 09/31</th>
+      <th>EMPTY_COL_188</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_10/26 - 09/27</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_10/27 - 09/28</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_10/28 - 09/29</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_10/29 - 09/30</th>
+      <th>Post-Shift + Hep C adj_Base w/o Biosim Adj_10/30 - 09/31</th>
+      <th>EMPTY_COL_194</th>
+      <th>Pre-MFP Adjustment Rebates_10/26 - 09/27</th>
+      <th>Pre-MFP Adjustment Rebates_10/27 - 09/28</th>
+      <th>Pre-MFP Adjustment Rebates_10/28 - 09/29</th>
+      <th>Pre-MFP Adjustment Rebates_10/29 - 09/30</th>
+      <th>Pre-MFP Adjustment Rebates_10/30 - 09/31</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G5||169450114||WEGOVY||ALTERNATIVE||B||B||N||N||M||30</td>
+      <td>G5</td>
+      <td>169450114</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9.389322136711694</td>
+      <td>24.880978446096048</td>
+      <td>31.437991649210517</td>
+      <td>39.280926490825735</td>
+      <td>49.11022181590787</td>
+      <td>0</td>
+      <td>21.997840434581686</td>
+      <td>58.29257807371074</td>
+      <td>73.65472329243606</td>
+      <td>92.02959920707742</td>
+      <td>115.05823396869845</td>
+      <td>9.389322136711694</td>
+      <td>9.389322136711694</td>
+      <td>24.880978446096048</td>
+      <td>31.437991649210517</td>
+      <td>39.280926490825735</td>
+      <td>49.11022181590787</td>
+      <td>21.997840434581686</td>
+      <td>21.997840434581686</td>
+      <td>58.29257807371074</td>
+      <td>73.65472329243606</td>
+      <td>92.02959920707742</td>
+      <td>115.05823396869845</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2.0869115596975427</td>
+      <td>5.530154443495117</td>
+      <td>6.987544705691547</td>
+      <td>8.730749502012829</td>
+      <td>10.915451415411967</td>
+      <td>4.889335654148529</td>
+      <td>12.956361839045703</td>
+      <td>16.37081902476305</td>
+      <td>20.454898833287196</td>
+      <td>25.573343316108037</td>
+      <td></td>
+      <td>14906.596752160134</td>
+      <td>38978.82872122665</td>
+      <td>49202.34168415879</td>
+      <td>61476.72967506983</td>
+      <td>76859.76193251151</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70.45031254850883</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>3313.205002968155</td>
+      <td>8663.60393832297</td>
+      <td>10935.9263778354</td>
+      <td>13664.085217576303</td>
+      <td>17083.18484732851</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.658592761125373</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3313.205002968155</td>
+      <td>8663.60393832297</td>
+      <td>10935.9263778354</td>
+      <td>13664.085217576303</td>
+      <td>17083.18484732851</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.658592761125373</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.658592761125373</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>690.2527478509193</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>3313.205002968155</td>
+      <td>8663.60393832297</td>
+      <td>10935.9263778354</td>
+      <td>13664.085217576303</td>
+      <td>17083.18484732851</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>62.63437104450149</td>
+      <td>162.4047997350692</td>
+      <td>204.87075452144313</td>
+      <td>255.97862593815336</td>
+      <td>320.0300549568726</td>
+    </tr>
+    <tr>
+      <td>G5||169450114||WEGOVY||ALTERNATIVE||B||B||N||N||M||90</td>
+      <td>G5</td>
+      <td>169450114</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.551697661383835</td>
+      <td>20.01141552164582</td>
+      <td>25.285127569293596</td>
+      <td>31.593088020478408</td>
+      <td>39.49864983193733</td>
+      <td>0</td>
+      <td>45.31018596830301</td>
+      <td>120.06849312987494</td>
+      <td>151.71076541576159</td>
+      <td>189.55852812287046</td>
+      <td>236.99189899162397</td>
+      <td>7.551697661383835</td>
+      <td>7.551697661383835</td>
+      <td>20.01141552164582</td>
+      <td>25.285127569293596</td>
+      <td>31.593088020478408</td>
+      <td>39.49864983193733</td>
+      <td>45.31018596830301</td>
+      <td>45.31018596830301</td>
+      <td>120.06849312987494</td>
+      <td>151.71076541576159</td>
+      <td>189.55852812287046</td>
+      <td>236.99189899162397</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>1.6784731544424523</td>
+      <td>4.4478242166967865</td>
+      <td>5.619982384720486</td>
+      <td>7.022017099476031</td>
+      <td>8.779141638395624</td>
+      <td>10.070838926654714</td>
+      <td>26.686945300180724</td>
+      <td>33.719894308322914</td>
+      <td>42.132102596856186</td>
+      <td>52.674849830373745</td>
+      <td></td>
+      <td>30703.953554144475</td>
+      <td>80286.88013433148</td>
+      <td>101344.82329822463</td>
+      <td>126627.06880633289</td>
+      <td>158312.3632975755</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>145.11046084686762</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>6824.394207333187</td>
+      <td>17844.91103881402</td>
+      <td>22525.34103922437</td>
+      <td>28144.68284449558</td>
+      <td>35187.19415504616</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.252881918952134</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6824.394207333187</td>
+      <td>17844.91103881402</td>
+      <td>22525.34103922437</td>
+      <td>28144.68284449558</td>
+      <td>35187.19415504616</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.252881918952134</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.252881918952134</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1421.7523062441496</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>6824.394207333187</td>
+      <td>17844.91103881402</td>
+      <td>22525.34103922437</td>
+      <td>28144.68284449558</td>
+      <td>35187.19415504616</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>129.01152767580854</td>
+      <td>334.5142765274779</td>
+      <td>421.98378583746023</td>
+      <td>527.2535356213914</td>
+      <td>659.1838571001925</td>
+    </tr>
+    <tr>
+      <td>G5||169450114||WEGOVY||ALTERNATIVE||B||B||N||N||R||30</td>
+      <td>G5</td>
+      <td>169450114</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>534.6078824883566</td>
+      <td>1416.6695963383247</td>
+      <td>1790.011877381084</td>
+      <td>2236.571780973708</td>
+      <td>2796.2307940081882</td>
+      <td>0</td>
+      <td>1072.351127904508</td>
+      <td>2841.647662264899</td>
+      <td>3590.521798402173</td>
+      <td>4486.260585614888</td>
+      <td>5608.860894229903</td>
+      <td>534.6078824883566</td>
+      <td>534.6078824883566</td>
+      <td>1416.6695963383247</td>
+      <td>1790.011877381084</td>
+      <td>2236.571780973708</td>
+      <td>2796.2307940081882</td>
+      <td>1072.351127904508</td>
+      <td>1072.351127904508</td>
+      <td>2841.647662264899</td>
+      <td>3590.521798402173</td>
+      <td>4486.260585614888</td>
+      <td>5608.860894229903</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>118.82427225583587</td>
+      <td>314.87514368166165</td>
+      <td>397.855822231993</td>
+      <td>497.1101678956775</td>
+      <td>621.5024133405243</td>
+      <td>238.3454239074993</td>
+      <td>631.5969639364189</td>
+      <td>798.044985285351</td>
+      <td>997.1357825000629</td>
+      <td>1246.649807778695</td>
+      <td></td>
+      <td>726667.0511559501</td>
+      <td>1900140.6555297112</td>
+      <td>2398516.652462209</td>
+      <td>2996868.742774628</td>
+      <td>3746761.0806573248</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3434.3131248399386</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>161512.1780921002</td>
+      <td>422333.523265928</td>
+      <td>533104.7391141538</td>
+      <td>666097.0761391879</td>
+      <td>832771.407434854</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>763.3253663570121</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>161512.1780921002</td>
+      <td>422333.523265928</td>
+      <td>533104.7391141538</td>
+      <td>666097.0761391879</td>
+      <td>832771.407434854</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>763.3253663570121</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>763.3253663570121</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33648.45357881126</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>161512.1780921002</td>
+      <td>422333.523265928</td>
+      <td>533104.7391141538</td>
+      <td>666097.0761391879</td>
+      <td>832771.407434854</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>3053.3014654280482</td>
+      <td>7916.912148304659</td>
+      <td>9987.043289047066</td>
+      <td>12478.450739768941</td>
+      <td>15600.830973245947</td>
+    </tr>
+    <tr>
+      <td>G5||169450114||WEGOVY||ALTERNATIVE||B||B||N||N||R||90</td>
+      <td>G5</td>
+      <td>169450114</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.080107979626911</td>
+      <td>26.71150757463025</td>
+      <td>33.75092960625957</td>
+      <td>42.170880368365054</td>
+      <td>52.72333099236395</td>
+      <td>0</td>
+      <td>60.453821243085144</td>
+      <td>160.19795693793554</td>
+      <td>202.41575480427397</td>
+      <td>252.9130509916451</td>
+      <td>316.1996710347097</td>
+      <td>10.080107979626911</td>
+      <td>10.080107979626911</td>
+      <td>26.71150757463025</td>
+      <td>33.75092960625957</td>
+      <td>42.170880368365054</td>
+      <td>52.72333099236395</td>
+      <td>60.453821243085144</td>
+      <td>60.453821243085144</td>
+      <td>160.19795693793554</td>
+      <td>202.41575480427397</td>
+      <td>252.9130509916451</td>
+      <td>316.1996710347097</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2.2404486244467186</td>
+      <td>5.937015806123685</td>
+      <td>7.501628351895994</td>
+      <td>9.3730832153752</td>
+      <td>11.718516769545847</td>
+      <td>13.436729142224033</td>
+      <td>35.60629439547499</td>
+      <td>44.98980569793114</td>
+      <td>56.21355429367402</td>
+      <td>70.27991361323106</td>
+      <td></td>
+      <td>40965.872903649826</td>
+      <td>107120.47624790762</td>
+      <td>135216.4353478681</td>
+      <td>168948.54917410962</td>
+      <td>211223.74818892032</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>193.60948698544468</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>9105.253017303336</td>
+      <td>23809.062774403432</td>
+      <td>30053.792795673256</td>
+      <td>37551.2390704978</td>
+      <td>46947.508601774156</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.0324863258488</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9105.253017303336</td>
+      <td>23809.062774403432</td>
+      <td>30053.792795673256</td>
+      <td>37551.2390704978</td>
+      <td>46947.508601774156</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.0324863258488</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.0324863258488</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1896.9323991244464</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>9105.253017303336</td>
+      <td>23809.062774403432</td>
+      <td>30053.792795673256</td>
+      <td>37551.2390704978</td>
+      <td>46947.508601774156</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>172.1299453033952</td>
+      <td>446.31611732070536</td>
+      <td>563.0198113586246</td>
+      <td>703.4729677458886</td>
+      <td>879.4972302991617</td>
+    </tr>
+    <tr>
+      <td>G5||169450514||WEGOVY||REBATABLE||B||B||N||N||M||30</td>
+      <td>G5</td>
+      <td>169450514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9.295428915344578</td>
+      <td>24.632168661635088</td>
+      <td>31.12361173271841</td>
+      <td>38.88811722591747</td>
+      <td>48.61911959774879</td>
+      <td>0</td>
+      <td>21.24669466364475</td>
+      <td>56.30209979802306</td>
+      <td>71.13968396049921</td>
+      <td>88.88712508781136</td>
+      <td>111.1294162234258</td>
+      <td>9.295428915344578</td>
+      <td>9.295428915344578</td>
+      <td>24.632168661635088</td>
+      <td>31.12361173271841</td>
+      <td>38.88811722591747</td>
+      <td>48.61911959774879</td>
+      <td>21.24669466364475</td>
+      <td>21.24669466364475</td>
+      <td>56.30209979802306</td>
+      <td>71.13968396049921</td>
+      <td>88.88712508781136</td>
+      <td>111.1294162234258</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2.0660424441005674</td>
+      <td>5.474852899060166</td>
+      <td>6.91766925863463</td>
+      <td>8.643442006992698</td>
+      <td>10.806296901257847</td>
+      <td>4.722382729372725</td>
+      <td>12.513949483566094</td>
+      <td>15.811815448307724</td>
+      <td>19.756438873126168</td>
+      <td>24.700107202875078</td>
+      <td></td>
+      <td>14397.591009403446</td>
+      <td>37647.84432586769</td>
+      <td>47522.2617242119</td>
+      <td>59377.524271530856</td>
+      <td>74235.2822567672</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.04469212002317</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>3200.0711735985105</td>
+      <td>8367.77355994121</td>
+      <td>10562.504501519066</td>
+      <td>13197.506697951745</td>
+      <td>16499.856584249002</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.123909105867432</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3200.0711735985105</td>
+      <td>8367.77355994121</td>
+      <td>10562.504501519066</td>
+      <td>13197.506697951745</td>
+      <td>16499.856584249002</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.123909105867432</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.123909105867432</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>666.6831418267415</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>3200.0711735985105</td>
+      <td>8367.77355994121</td>
+      <td>10562.504501519066</td>
+      <td>13197.506697951745</td>
+      <td>16499.856584249002</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>60.495636423469726</td>
+      <td>156.85926998801804</td>
+      <td>197.8751677816865</td>
+      <td>247.23789236953348</td>
+      <td>309.1021994217599</td>
+    </tr>
+    <tr>
+      <td>G5||169450514||WEGOVY||REBATABLE||B||B||N||N||M||90</td>
+      <td>G5</td>
+      <td>169450514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.533701260297932</td>
+      <td>12.013958163972092</td>
+      <td>15.180058824904505</td>
+      <td>18.96707593414157</td>
+      <td>23.713221391109798</td>
+      <td>0</td>
+      <td>27.202207561787596</td>
+      <td>72.08374898383255</td>
+      <td>91.08035294942702</td>
+      <td>113.8024556048494</td>
+      <td>142.27932834665876</td>
+      <td>4.533701260297932</td>
+      <td>4.533701260297932</td>
+      <td>12.013958163972092</td>
+      <td>15.180058824904505</td>
+      <td>18.96707593414157</td>
+      <td>23.713221391109798</td>
+      <td>27.202207561787596</td>
+      <td>27.202207561787596</td>
+      <td>72.08374898383255</td>
+      <td>91.08035294942702</td>
+      <td>113.8024556048494</td>
+      <td>142.27932834665876</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>1.007680153111099</td>
+      <td>2.670274574144785</td>
+      <td>3.373985872176775</td>
+      <td>4.215704759543337</td>
+      <td>5.270603683441777</td>
+      <td>6.046080918666595</td>
+      <td>16.02164744486871</td>
+      <td>20.243915233060648</td>
+      <td>25.29422855726002</td>
+      <td>31.62362210065066</td>
+      <td></td>
+      <td>18433.279398402898</td>
+      <td>48200.649174785154</td>
+      <td>60842.89569236221</td>
+      <td>76021.2242567327</td>
+      <td>95043.6568287398</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.11782551730239</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>4097.060820743548</td>
+      <td>10713.285845682305</td>
+      <td>13523.206520884258</td>
+      <td>16896.80781783216</td>
+      <td>21124.816384379395</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.363186658269665</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4097.060820743548</td>
+      <td>10713.285845682305</td>
+      <td>13523.206520884258</td>
+      <td>16896.80781783216</td>
+      <td>21124.816384379395</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.363186658269665</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.363186658269665</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>853.556446732722</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>4097.060820743548</td>
+      <td>10713.285845682305</td>
+      <td>13523.206520884258</td>
+      <td>16896.80781783216</td>
+      <td>21124.816384379395</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>77.45274663307866</td>
+      <td>200.82739869678062</td>
+      <td>253.34017693261376</td>
+      <td>316.53942280644816</td>
+      <td>395.7444825930107</td>
+    </tr>
+    <tr>
+      <td>G5||169450514||WEGOVY||REBATABLE||B||B||N||N||R||30</td>
+      <td>G5</td>
+      <td>169450514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>436.14742656759637</td>
+      <td>1155.7569930760844</td>
+      <td>1460.33962352247</td>
+      <td>1824.655151108128</td>
+      <td>2281.239960808657</td>
+      <td>0</td>
+      <td>874.4175106039565</td>
+      <td>2317.1388644937324</td>
+      <td>2927.786478728494</td>
+      <td>3658.1905973836465</td>
+      <td>4573.582339620696</td>
+      <td>436.14742656759637</td>
+      <td>436.14742656759637</td>
+      <td>1155.7569930760844</td>
+      <td>1460.33962352247</td>
+      <td>1824.655151108128</td>
+      <td>2281.239960808657</td>
+      <td>874.4175106039565</td>
+      <td>874.4175106039565</td>
+      <td>2317.1388644937324</td>
+      <td>2927.786478728494</td>
+      <td>3658.1905973836465</td>
+      <td>4573.582339620696</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>96.940023250179</td>
+      <td>256.88357412098173</td>
+      <td>324.5814337860947</td>
+      <td>405.55578686778443</td>
+      <td>507.03831174790776</td>
+      <td>194.35183757796105</td>
+      <td>515.017358157225</td>
+      <td>650.7425517860119</td>
+      <td>813.0853467479883</td>
+      <td>1016.5442951907997</td>
+      <td></td>
+      <td>592539.4932454312</td>
+      <td>1549414.3835633812</td>
+      <td>1955800.5823022763</td>
+      <td>2443709.376036721</td>
+      <td>3055187.253244455</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2800.4106631801396</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>131700.40392972238</td>
+      <td>344379.57721967006</td>
+      <td>434704.74058090494</td>
+      <td>543149.4703384779</td>
+      <td>679059.2018253398</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>622.4314492353374</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>131700.40392972238</td>
+      <td>344379.57721967006</td>
+      <td>434704.74058090494</td>
+      <td>543149.4703384779</td>
+      <td>679059.2018253398</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>622.4314492353374</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>622.4314492353374</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27437.651948529503</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>131700.40392972238</td>
+      <td>344379.57721967006</td>
+      <td>434704.74058090494</td>
+      <td>543149.4703384779</td>
+      <td>679059.2018253398</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>2489.7257969413495</td>
+      <td>6455.615546298227</td>
+      <td>8143.643722525309</td>
+      <td>10175.1894021736</td>
+      <td>12721.243469605039</td>
+    </tr>
+    <tr>
+      <td>G5||169450514||WEGOVY||REBATABLE||B||B||N||N||R||90</td>
+      <td>G5</td>
+      <td>169450514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.6134733060197775</td>
+      <td>14.875270685273136</td>
+      <td>18.795427864563713</td>
+      <td>23.48438248058653</td>
+      <td>29.360896899939206</td>
+      <td>0</td>
+      <td>33.640599884104184</td>
+      <td>89.14499134686983</td>
+      <td>112.6378329374571</td>
+      <td>140.73794805570134</td>
+      <td>175.95490902042422</td>
+      <td>5.6134733060197775</td>
+      <td>5.6134733060197775</td>
+      <td>14.875270685273136</td>
+      <td>18.795427864563713</td>
+      <td>23.48438248058653</td>
+      <td>29.360896899939206</td>
+      <td>33.640599884104184</td>
+      <td>33.640599884104184</td>
+      <td>89.14499134686983</td>
+      <td>112.6378329374571</td>
+      <td>140.73794805570134</td>
+      <td>175.95490902042422</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>1.2476749824763165</td>
+      <td>3.3062423351467234</td>
+      <td>4.177553513331302</td>
+      <td>5.219740952274813</td>
+      <td>6.525880596214154</td>
+      <td>7.477105988173481</td>
+      <td>19.813753348979645</td>
+      <td>25.03537445982057</td>
+      <td>31.281028215783103</td>
+      <td>39.108503071218884</td>
+      <td></td>
+      <td>22796.185764888785</td>
+      <td>59609.08684929051</td>
+      <td>75243.58106333553</td>
+      <td>94014.41342992388</td>
+      <td>117539.19690654808</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>107.73742919003669</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>5066.77935819764</td>
+      <td>13248.974803240248</td>
+      <td>16723.965460738527</td>
+      <td>20896.05227175693</td>
+      <td>26124.772925060926</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.946189417623433</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5066.77935819764</td>
+      <td>13248.974803240248</td>
+      <td>16723.965460738527</td>
+      <td>20896.05227175693</td>
+      <td>26124.772925060926</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.946189417623433</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.946189417623433</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1055.5816412256738</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>5066.77935819764</td>
+      <td>13248.974803240248</td>
+      <td>16723.965460738527</td>
+      <td>20896.05227175693</td>
+      <td>26124.772925060926</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>95.78475767049373</td>
+      <td>248.36051081436185</td>
+      <td>313.30234898767037</td>
+      <td>391.45999625176137</td>
+      <td>489.41181575111995</td>
+    </tr>
+    <tr>
+      <td>G5||169451714||WEGOVY||ALTERNATIVE||B||B||N||N||M||30</td>
+      <td>G5</td>
+      <td>169451714</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8.611349731098441</td>
+      <td>22.819411660562377</td>
+      <td>28.833129483990213</td>
+      <td>36.02622115301446</td>
+      <td>45.04108915116121</td>
+      <td>0</td>
+      <td>31.42740252330786</td>
+      <td>83.28018928457578</td>
+      <td>105.22744919157175</td>
+      <td>131.478872525721</td>
+      <td>164.37892816381733</td>
+      <td>8.611349731098441</td>
+      <td>8.611349731098441</td>
+      <td>22.819411660562377</td>
+      <td>28.833129483990213</td>
+      <td>36.02622115301446</td>
+      <td>45.04108915116121</td>
+      <td>31.42740252330786</td>
+      <td>31.42740252330786</td>
+      <td>83.28018928457578</td>
+      <td>105.22744919157175</td>
+      <td>131.478872525721</td>
+      <td>164.37892816381733</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>1.9139960304654609</td>
+      <td>5.071941646748379</td>
+      <td>6.408576715791389</td>
+      <td>8.007344543274623</td>
+      <td>10.011028298134972</td>
+      <td>6.98519112053049</td>
+      <td>18.510216944441517</td>
+      <td>23.388310350621843</td>
+      <td>29.223065833165794</td>
+      <td>36.53557523758605</td>
+      <td></td>
+      <td>14197.62455530972</td>
+      <td>37124.95782845299</td>
+      <td>46862.23060085951</td>
+      <td>58552.83679612701</td>
+      <td>73204.23712207505</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.09957721215495</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>3155.625760125235</td>
+      <td>8251.554533692457</td>
+      <td>10415.803114451028</td>
+      <td>13014.208074206705</td>
+      <td>16270.692009977345</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.913843757405182</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3155.625760125235</td>
+      <td>8251.554533692457</td>
+      <td>10415.803114451028</td>
+      <td>13014.208074206705</td>
+      <td>16270.692009977345</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.913843757405182</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.913843757405182</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>657.4231664115617</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>3155.625760125235</td>
+      <td>8251.554533692457</td>
+      <td>10415.803114451028</td>
+      <td>13014.208074206705</td>
+      <td>16270.692009977345</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>59.65537502962073</td>
+      <td>154.68055435445316</td>
+      <td>195.1267569190504</td>
+      <td>243.80385202651598</td>
+      <td>304.8088873701295</td>
+    </tr>
+    <tr>
+      <td>G5||169451714||WEGOVY||ALTERNATIVE||B||B||N||N||M||90</td>
+      <td>G5</td>
+      <td>169451714</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.546742653234048</td>
+      <td>38.54774446398738</td>
+      <td>48.70643134795543</td>
+      <td>60.85737825614358</td>
+      <td>76.08576508478869</td>
+      <td>0</td>
+      <td>130.86032395108472</td>
+      <td>346.7697510287329</td>
+      <td>438.15578075671107</td>
+      <td>547.4638840635655</td>
+      <td>684.4561771942816</td>
+      <td>14.546742653234048</td>
+      <td>14.546742653234048</td>
+      <td>38.54774446398738</td>
+      <td>48.70643134795543</td>
+      <td>60.85737825614358</td>
+      <td>76.08576508478869</td>
+      <td>130.86032395108472</td>
+      <td>130.86032395108472</td>
+      <td>346.7697510287329</td>
+      <td>438.15578075671107</td>
+      <td>547.4638840635655</td>
+      <td>684.4561771942816</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>3.2332222664171217</td>
+      <td>8.56778927710065</td>
+      <td>10.825703190460688</td>
+      <td>13.52642547847559</td>
+      <td>16.91115294287754</td>
+      <td>29.08558453772747</td>
+      <td>77.0745525010548</td>
+      <td>97.3864087838953</td>
+      <td>121.68170305948165</td>
+      <td>152.13020572679878</td>
+      <td></td>
+      <td>59117.38163107196</td>
+      <td>154584.33144446748</td>
+      <td>195129.28798206805</td>
+      <td>243807.71480282338</td>
+      <td>304814.5699372446</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>279.3954226554775</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>13139.686263671274</td>
+      <td>34358.58558715475</td>
+      <td>43370.28390293821</td>
+      <td>54189.762685429196</td>
+      <td>67749.41154474563</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.099641356058456</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13139.686263671274</td>
+      <td>34358.58558715475</td>
+      <td>43370.28390293821</td>
+      <td>54189.762685429196</td>
+      <td>67749.41154474563</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.099641356058456</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.099641356058456</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2737.439356172086</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>13139.686263671274</td>
+      <td>34358.58558715475</td>
+      <td>43370.28390293821</td>
+      <td>54189.762685429196</td>
+      <td>67749.41154474563</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>248.39856542423382</td>
+      <td>644.073191755034</td>
+      <td>812.4868290662635</td>
+      <td>1015.1730176571447</td>
+      <td>1269.191423466916</td>
+    </tr>
+    <tr>
+      <td>G5||169451714||WEGOVY||ALTERNATIVE||B||B||N||N||R||30</td>
+      <td>G5</td>
+      <td>169451714</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>723.9167367404717</td>
+      <td>1918.3234381940051</td>
+      <td>2423.8691561541305</td>
+      <td>3028.5594324426634</td>
+      <td>3786.3981020064966</td>
+      <td>0</td>
+      <td>2178.897831697987</td>
+      <td>5773.910959424105</td>
+      <td>7295.539639605353</td>
+      <td>9115.580902619131</td>
+      <td>11396.579462376849</td>
+      <td>723.9167367404717</td>
+      <td>723.9167367404717</td>
+      <td>1918.3234381940051</td>
+      <td>2423.8691561541305</td>
+      <td>3028.5594324426634</td>
+      <td>3786.3981020064966</td>
+      <td>2178.897831697987</td>
+      <td>2178.897831697987</td>
+      <td>5773.910959424105</td>
+      <td>7295.539639605353</td>
+      <td>9115.580902619131</td>
+      <td>11396.579462376849</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>160.90088125268056</td>
+      <td>426.3749075934735</td>
+      <td>538.7396968088182</td>
+      <td>673.1407866051889</td>
+      <td>841.5813041282626</td>
+      <td>484.29130518286144</td>
+      <td>1283.334552850531</td>
+      <td>1621.5383588336622</td>
+      <td>2026.0686428739739</td>
+      <td>2533.05329977477</td>
+      <td></td>
+      <td>984337.580424715</td>
+      <td>2573915.870212402</td>
+      <td>3249012.1501137847</td>
+      <td>4059535.274677191</td>
+      <td>5075333.649292188</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4652.090582000399</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>218783.1501915508</td>
+      <td>572089.7318276938</td>
+      <td>722139.56608851</td>
+      <td>902289.9596339522</td>
+      <td>1128065.7227231108</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1033.9938784693556</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>218783.1501915508</td>
+      <td>572089.7318276938</td>
+      <td>722139.56608851</td>
+      <td>902289.9596339522</td>
+      <td>1128065.7227231108</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1033.9938784693556</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1033.9938784693556</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45579.90151237624</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>218783.1501915508</td>
+      <td>572089.7318276938</td>
+      <td>722139.56608851</td>
+      <td>902289.9596339522</td>
+      <td>1128065.7227231108</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>4135.975513877423</td>
+      <td>10724.180092160108</td>
+      <td>13528.361665965296</td>
+      <td>16903.200452096382</td>
+      <td>21132.74946220872</td>
+    </tr>
+    <tr>
+      <td>G5||169451714||WEGOVY||ALTERNATIVE||B||B||N||N||R||90</td>
+      <td>G5</td>
+      <td>169451714</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.840755851964403</td>
+      <td>68.47600710914863</td>
+      <td>86.52184416029151</td>
+      <td>108.10672126367967</td>
+      <td>135.15834618335217</td>
+      <td>0</td>
+      <td>232.2750630155746</td>
+      <td>615.5109764377623</td>
+      <td>777.719774130666</td>
+      <td>971.7399768714379</td>
+      <td>1214.8991909008896</td>
+      <td>25.840755851964403</td>
+      <td>25.840755851964403</td>
+      <td>68.47600710914863</td>
+      <td>86.52184416029151</td>
+      <td>108.10672126367967</td>
+      <td>135.15834618335217</td>
+      <td>232.2750630155746</td>
+      <td>232.2750630155746</td>
+      <td>615.5109764377623</td>
+      <td>777.719774130666</td>
+      <td>971.7399768714379</td>
+      <td>1214.8991909008896</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>5.743478742510452</td>
+      <td>15.21977505056192</td>
+      <td>19.230721250735375</td>
+      <td>24.028269879468162</td>
+      <td>30.040881645415936</td>
+      <td>51.62646535913203</td>
+      <td>136.8061456562772</td>
+      <td>172.85937826040583</td>
+      <td>215.98315205568662</td>
+      <td>270.02877613976455</td>
+      <td></td>
+      <td>104932.44345632076</td>
+      <td>274384.81155606615</td>
+      <td>346351.48602536664</td>
+      <td>432754.9451939106</td>
+      <td>541041.1750677308</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>495.92257946589166</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>23322.741093319954</td>
+      <td>60985.961148663584</td>
+      <td>76981.58710293207</td>
+      <td>96185.99559070378</td>
+      <td>120254.1638343044</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>110.22590861546996</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23322.741093319954</td>
+      <td>60985.961148663584</td>
+      <td>76981.58710293207</td>
+      <td>96185.99559070378</td>
+      <td>120254.1638343044</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>110.22590861546996</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>110.22590861546996</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4858.912768654464</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>23322.741093319954</td>
+      <td>60985.961148663584</td>
+      <td>76981.58710293207</td>
+      <td>96185.99559070378</td>
+      <td>120254.1638343044</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>440.90363446187985</td>
+      <td>1143.2200126408347</td>
+      <td>1442.1516294827</td>
+      <td>1801.9164979002005</td>
+      <td>2252.7952626405</td>
+    </tr>
+    <tr>
+      <td>G5||169452414||WEGOVY||ALTERNATIVE||B||B||N||N||M||30</td>
+      <td>G5</td>
+      <td>169452414</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13.20541091941809</td>
+      <td>34.99331897168794</td>
+      <td>44.21528968378251</td>
+      <td>55.24581732888276</td>
+      <td>69.07001911108757</td>
+      <td>0</td>
+      <td>47.281943617012466</td>
+      <td>125.29349860355511</td>
+      <td>158.3127436620958</td>
+      <td>197.80752268594384</td>
+      <td>247.30504557296464</td>
+      <td>13.20541091941809</td>
+      <td>13.20541091941809</td>
+      <td>34.99331897168794</td>
+      <td>44.21528968378251</td>
+      <td>55.24581732888276</td>
+      <td>69.07001911108757</td>
+      <td>47.281943617012466</td>
+      <td>47.281943617012466</td>
+      <td>125.29349860355511</td>
+      <td>158.3127436620958</td>
+      <td>197.80752268594384</td>
+      <td>247.30504557296464</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2.935092043603187</td>
+      <td>7.7777672137442035</td>
+      <td>9.827482518219039</td>
+      <td>12.279175549616612</td>
+      <td>15.351802740675831</td>
+      <td>10.509090354191198</td>
+      <td>27.8482777333147</td>
+      <td>35.18727869651814</td>
+      <td>43.96555999227888</td>
+      <td>54.967094627610265</td>
+      <td></td>
+      <td>21360.0625512022</td>
+      <td>55853.80979312709</td>
+      <td>70503.35589757995</td>
+      <td>88091.65587125381</td>
+      <td>110134.41564460716</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.95006814888869</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>4747.580368946416</td>
+      <td>12414.310598064834</td>
+      <td>15670.382406504426</td>
+      <td>19579.6344266234</td>
+      <td>24478.954048301388</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.437601043471304</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4747.580368946416</td>
+      <td>12414.310598064834</td>
+      <td>15670.382406504426</td>
+      <td>19579.6344266234</td>
+      <td>24478.954048301388</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.437601043471304</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.437601043471304</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>989.0809481864084</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>4747.580368946416</td>
+      <td>12414.310598064834</td>
+      <td>15670.382406504426</td>
+      <td>19579.6344266234</td>
+      <td>24478.954048301388</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>89.75040417388522</td>
+      <td>232.71402223621314</td>
+      <td>293.5645830728351</td>
+      <td>366.79836892593624</td>
+      <td>458.57931198450996</td>
+    </tr>
+    <tr>
+      <td>G5||169452414||WEGOVY||ALTERNATIVE||B||B||N||N||M||90</td>
+      <td>G5</td>
+      <td>169452414</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.04016797102052</td>
+      <td>100.803506961612</td>
+      <td>127.36877759594431</td>
+      <td>159.14386789711685</td>
+      <td>198.9665558141639</td>
+      <td>0</td>
+      <td>342.2810318351558</td>
+      <td>907.01829712497</td>
+      <td>1146.0495298636483</td>
+      <td>1431.9581174184157</td>
+      <td>1790.278057569053</td>
+      <td>38.04016797102052</td>
+      <td>38.04016797102052</td>
+      <td>100.803506961612</td>
+      <td>127.36877759594431</td>
+      <td>159.14386789711685</td>
+      <td>198.9665558141639</td>
+      <td>342.2810318351558</td>
+      <td>342.2810318351558</td>
+      <td>907.01829712497</td>
+      <td>1146.0495298636483</td>
+      <td>1431.9581174184157</td>
+      <td>1790.278057569053</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>8.454973119003187</td>
+      <td>22.405025716788792</td>
+      <td>28.309538264773177</td>
+      <td>35.37200798244055</td>
+      <td>44.223171734440484</td>
+      <td>76.07687025765985</td>
+      <td>201.59783012729773</td>
+      <td>254.72595114262407</td>
+      <td>318.2732368462333</td>
+      <td>397.9149845978323</td>
+      <td></td>
+      <td>154628.67409406463</td>
+      <td>404334.0477449694</td>
+      <td>510384.2938423957</td>
+      <td>637708.6168858596</td>
+      <td>797279.437849386</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>730.7925784463381</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>34368.44137724103</td>
+      <td>89869.04335926763</td>
+      <td>113440.23212742693</td>
+      <td>141739.88973009246</td>
+      <td>177206.79415732052</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>162.42913572405692</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34368.44137724103</td>
+      <td>89869.04335926763</td>
+      <td>113440.23212742693</td>
+      <td>141739.88973009246</td>
+      <td>177206.79415732052</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>162.42913572405692</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>162.42913572405692</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7160.104293849864</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>34368.44137724103</td>
+      <td>89869.04335926763</td>
+      <td>113440.23212742693</td>
+      <td>141739.88973009246</td>
+      <td>177206.79415732052</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>649.7165428962277</td>
+      <td>1684.6514665031734</td>
+      <td>2125.157739248966</td>
+      <td>2655.308022199161</td>
+      <td>3319.7239385023336</td>
+    </tr>
+    <tr>
+      <td>G5||169452414||WEGOVY||ALTERNATIVE||B||B||N||N||R||30</td>
+      <td>G5</td>
+      <td>169452414</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1276.9612239101286</td>
+      <td>3383.848612923985</td>
+      <td>4275.611775709272</td>
+      <td>5342.262118361572</td>
+      <td>6679.060324423206</td>
+      <td>0</td>
+      <td>3847.3166621342984</td>
+      <td>10195.091994084489</td>
+      <td>12881.857426441014</td>
+      <td>16095.534990894821</td>
+      <td>20123.132631129927</td>
+      <td>1276.9612239101286</td>
+      <td>1276.9612239101286</td>
+      <td>3383.848612923985</td>
+      <td>4275.611775709272</td>
+      <td>5342.262118361572</td>
+      <td>6679.060324423206</td>
+      <td>3847.3166621342984</td>
+      <td>3847.3166621342984</td>
+      <td>10195.091994084489</td>
+      <td>12881.857426441014</td>
+      <td>16095.534990894821</td>
+      <td>20123.132631129927</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>283.8229534210939</td>
+      <td>752.1089045359694</td>
+      <td>950.3160621807726</td>
+      <td>1187.394404773033</td>
+      <td>1484.5169859980492</td>
+      <td>855.121328155531</td>
+      <td>2266.0054714116036</td>
+      <td>2863.1776375531185</td>
+      <td>3577.463585010033</td>
+      <td>4472.654947158872</td>
+      <td></td>
+      <td>1738061.472750083</td>
+      <td>4544806.677182774</td>
+      <td>5736835.56831505</td>
+      <td>7167989.923885667</td>
+      <td>8961602.251720095</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8214.274827168216</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>386309.0994359457</td>
+      <td>1010148.4913505146</td>
+      <td>1275094.015231391</td>
+      <td>1593188.6044748484</td>
+      <td>1991844.6784781406</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1825.7404359707566</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>386309.0994359457</td>
+      <td>1010148.4913505146</td>
+      <td>1275094.015231391</td>
+      <td>1593188.6044748484</td>
+      <td>1991844.6784781406</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1825.7404359707566</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1825.7404359707566</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>80481.20108979565</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>386309.0994359457</td>
+      <td>1010148.4913505146</td>
+      <td>1275094.015231391</td>
+      <td>1593188.6044748484</td>
+      <td>1991844.6784781406</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>7302.961743883026</td>
+      <td>18935.865718928027</td>
+      <td>23887.256433812207</td>
+      <td>29846.26621619421</td>
+      <td>37314.452261080005</td>
+    </tr>
+    <tr>
+      <td>G5||169452414||WEGOVY||ALTERNATIVE||B||B||N||N||R||90</td>
+      <td>G5</td>
+      <td>169452414</td>
+      <td>WEGOVY</td>
+      <td>ALTERNATIVE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>90.76121176865671</td>
+      <td>240.5102009364413</td>
+      <td>303.89310070626135</td>
+      <td>379.7062701431034</td>
+      <td>474.72045131048645</td>
+      <td>0</td>
+      <td>816.3126965597168</td>
+      <td>2163.165595199186</td>
+      <td>2733.2358357636035</td>
+      <td>3415.1047924658674</td>
+      <td>4269.668993722431</td>
+      <td>90.76121176865671</td>
+      <td>90.76121176865671</td>
+      <td>240.5102009364413</td>
+      <td>303.89310070626135</td>
+      <td>379.7062701431034</td>
+      <td>474.72045131048645</td>
+      <td>816.3126965597168</td>
+      <td>816.3126965597168</td>
+      <td>2163.165595199186</td>
+      <td>2733.2358357636035</td>
+      <td>3415.1047924658674</td>
+      <td>4269.668993722431</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>20.172981526704895</td>
+      <td>53.456842917013866</td>
+      <td>67.5446017872312</td>
+      <td>84.39516643624259</td>
+      <td>105.51343143197865</td>
+      <td>181.43720898843995</td>
+      <td>480.79458990020294</td>
+      <td>607.5008800403441</td>
+      <td>759.0560388922287</td>
+      <td>948.9951936191745</td>
+      <td></td>
+      <td>368776.9352523462</td>
+      <td>964304.1422890212</td>
+      <td>1217225.4388576974</td>
+      <td>1520883.6957116933</td>
+      <td>1901447.2532497498</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1742.8814478526594</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>81965.96494637712</td>
+      <td>214330.43113290882</td>
+      <td>270545.81812438276</td>
+      <td>338038.2224959879</td>
+      <td>422623.933355828</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>387.38040805786324</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>81965.96494637712</td>
+      <td>214330.43113290882</td>
+      <td>270545.81812438276</td>
+      <td>338038.2224959879</td>
+      <td>422623.933355828</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>387.38040805786324</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>387.38040805786324</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>17076.272127683413</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6099999999999999</td>
+      <td>0.6099999999999999</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>81965.96494637712</td>
+      <td>214330.43113290882</td>
+      <td>270545.81812438276</td>
+      <td>338038.2224959879</td>
+      <td>422623.933355828</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>1549.521632231453</td>
+      <td>4017.7580802864663</td>
+      <td>5068.33006620291</td>
+      <td>6332.695797300138</td>
+      <td>7917.274251346183</td>
+    </tr>
+    <tr>
+      <td>G5||169452514||WEGOVY||REBATABLE||B||B||N||N||M||30</td>
+      <td>G5</td>
+      <td>169452514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.719364128110829</td>
+      <td>20.45571870818325</td>
+      <td>25.846520277315214</td>
+      <td>32.29453313638601</td>
+      <td>40.375618078649964</td>
+      <td>0</td>
+      <td>16.431313739245468</td>
+      <td>43.54171228066808</td>
+      <td>55.016485386118404</td>
+      <td>68.74162135894503</td>
+      <td>85.94288817783877</td>
+      <td>7.719364128110829</td>
+      <td>7.719364128110829</td>
+      <td>20.45571870818325</td>
+      <td>25.846520277315214</td>
+      <td>32.29453313638601</td>
+      <td>40.375618078649964</td>
+      <td>16.431313739245468</td>
+      <td>16.431313739245468</td>
+      <td>43.54171228066808</td>
+      <td>55.016485386118404</td>
+      <td>68.74162135894503</td>
+      <td>85.94288817783877</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>1.7157394322941941</td>
+      <td>4.546576974616343</td>
+      <td>5.744759968750692</td>
+      <td>7.177923340583402</td>
+      <td>8.974060413670838</td>
+      <td>3.6520952294707003</td>
+      <td>9.677770276116453</td>
+      <td>12.228203234960207</td>
+      <td>15.278811628522448</td>
+      <td>19.10203997697094</td>
+      <td></td>
+      <td>11134.50062280254</td>
+      <td>29115.28364847722</td>
+      <td>36751.749123838126</td>
+      <td>45920.11820241497</td>
+      <td>57410.492906906446</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.622946873123986</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>2474.8025174609697</td>
+      <td>6471.2895271009975</td>
+      <td>8168.603544419733</td>
+      <td>10206.405116787177</td>
+      <td>12760.305754864283</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11.696204958767428</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2474.8025174609697</td>
+      <td>6471.2895271009975</td>
+      <td>8168.603544419733</td>
+      <td>10206.405116787177</td>
+      <td>12760.305754864283</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11.696204958767428</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11.696204958767428</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>515.5851317788879</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>2474.8025174609697</td>
+      <td>6471.2895271009975</td>
+      <td>8168.603544419733</td>
+      <td>10206.405116787177</td>
+      <td>12760.305754864283</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>46.78481983506971</td>
+      <td>121.30846321674372</td>
+      <td>153.0284599321755</td>
+      <td>191.20354681355968</td>
+      <td>239.0468398305908</td>
+    </tr>
+    <tr>
+      <td>G5||169452514||WEGOVY||REBATABLE||B||B||N||N||M||90</td>
+      <td>G5</td>
+      <td>169452514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>M</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.7571445712989033</td>
+      <td>4.656297394912261</td>
+      <td>5.883395580066538</td>
+      <td>7.351144814711671</td>
+      <td>9.19062722554847</td>
+      <td>0</td>
+      <td>10.5160407931171</td>
+      <td>27.866695859627573</td>
+      <td>35.210550647115774</td>
+      <td>43.99463766972481</td>
+      <td>55.0034484338168</td>
+      <td>1.7571445712989033</td>
+      <td>1.7571445712989033</td>
+      <td>4.656297394912261</td>
+      <td>5.883395580066538</td>
+      <td>7.351144814711671</td>
+      <td>9.19062722554847</td>
+      <td>10.5160407931171</td>
+      <td>10.5160407931171</td>
+      <td>27.866695859627573</td>
+      <td>35.210550647115774</td>
+      <td>43.99463766972481</td>
+      <td>55.0034484338168</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>0.3905505918862545</td>
+      <td>1.0349289029969433</td>
+      <td>1.3076690806365605</td>
+      <td>1.6338974068052574</td>
+      <td>2.0427487648842386</td>
+      <td>2.3373409468612483</td>
+      <td>6.193772976714531</td>
+      <td>7.826050070374531</td>
+      <td>9.778439442254365</td>
+      <td>12.225305585261399</td>
+      <td></td>
+      <td>7126.080398593625</td>
+      <td>18633.78153502542</td>
+      <td>23521.1194392564</td>
+      <td>29388.875649545575</td>
+      <td>36742.71546042012</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.67868599879935</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>1583.8736111750204</td>
+      <td>4141.625297344639</td>
+      <td>5227.906268428629</td>
+      <td>6532.099274743792</td>
+      <td>8166.595683113139</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.485571173611155</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1583.8736111750204</td>
+      <td>4141.625297344639</td>
+      <td>5227.906268428629</td>
+      <td>6532.099274743792</td>
+      <td>8166.595683113139</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.485571173611155</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.485571173611155</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>329.97448433848825</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>1583.8736111750204</td>
+      <td>4141.625297344639</td>
+      <td>5227.906268428629</td>
+      <td>6532.099274743792</td>
+      <td>8166.595683113139</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>29.94228469444462</td>
+      <td>77.63741645871599</td>
+      <td>97.9382143565923</td>
+      <td>122.37026996067817</td>
+      <td>152.9899774915781</td>
+    </tr>
+    <tr>
+      <td>G5||169452514||WEGOVY||REBATABLE||B||B||N||N||R||30</td>
+      <td>G5</td>
+      <td>169452514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>30</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>322.0671626065493</td>
+      <td>853.4531049560175</td>
+      <td>1078.3680249845625</td>
+      <td>1347.391894244595</td>
+      <td>1684.550765745377</td>
+      <td>0</td>
+      <td>645.3146971388566</td>
+      <td>1710.0341043452581</td>
+      <td>2160.6882546335974</td>
+      <td>2699.72196210518</td>
+      <td>3375.2753879476104</td>
+      <td>322.0671626065493</td>
+      <td>322.0671626065493</td>
+      <td>853.4531049560175</td>
+      <td>1078.3680249845625</td>
+      <td>1347.391894244595</td>
+      <td>1684.550765745377</td>
+      <td>645.3146971388566</td>
+      <td>645.3146971388566</td>
+      <td>1710.0341043452581</td>
+      <td>2160.6882546335974</td>
+      <td>2699.72196210518</td>
+      <td>3375.2753879476104</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>71.58404779985385</td>
+      <td>189.69219763251607</td>
+      <td>239.68276561194247</td>
+      <td>299.47718041832854</td>
+      <td>374.4155770506525</td>
+      <td>143.43045019578395</td>
+      <td>380.07961468078577</td>
+      <td>480.24396541545764</td>
+      <td>600.051940774053</td>
+      <td>750.2033822792423</td>
+      <td></td>
+      <td>437290.46935757564</td>
+      <td>1143458.201084277</td>
+      <td>1443368.6941615122</td>
+      <td>1803442.3565046405</td>
+      <td>2254709.2357153213</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2066.6856931150974</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>97194.08091024263</td>
+      <td>254149.99114190124</td>
+      <td>320809.4012424763</td>
+      <td>400840.9389131682</td>
+      <td>501141.47744205757</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>459.3505474010619</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97194.08091024263</td>
+      <td>254149.99114190124</td>
+      <td>320809.4012424763</td>
+      <td>400840.9389131682</td>
+      <td>501141.47744205757</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>459.3505474010619</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>459.3505474010619</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20248.81688969983</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>97194.08091024263</td>
+      <td>254149.99114190124</td>
+      <td>320809.4012424763</td>
+      <td>400840.9389131682</td>
+      <td>501141.47744205757</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>1837.4021896042475</td>
+      <td>4764.2042166184</td>
+      <td>6009.9585366016045</td>
+      <td>7509.226642612535</td>
+      <td>9388.198746326305</td>
+    </tr>
+    <tr>
+      <td>G5||169452514||WEGOVY||REBATABLE||B||B||N||N||R||90</td>
+      <td>G5</td>
+      <td>169452514</td>
+      <td>WEGOVY</td>
+      <td>REBATABLE</td>
+      <td>B</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>R</td>
+      <td>90</td>
+      <td>00</td>
+      <td>00000000000000</td>
+      <td>00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>GLP-1 ANTI-OBESITY AGENTS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2.1394241154364506</td>
+      <td>5.669308660217599</td>
+      <td>7.163370954355823</td>
+      <td>8.950439678981006</td>
+      <td>11.190114828053291</td>
+      <td>0</td>
+      <td>12.796304740604224</td>
+      <td>33.90921919653661</td>
+      <td>42.84549147620976</td>
+      <td>53.53429124606821</td>
+      <td>66.93021658910871</td>
+      <td>2.1394241154364506</td>
+      <td>2.1394241154364506</td>
+      <td>5.669308660217599</td>
+      <td>7.163370954355823</td>
+      <td>8.950439678981006</td>
+      <td>11.190114828053291</td>
+      <td>12.796304740604224</td>
+      <td>12.796304740604224</td>
+      <td>33.90921919653661</td>
+      <td>42.84549147620976</td>
+      <td>53.53429124606821</td>
+      <td>66.93021658910871</td>
+      <td></td>
+      <td>N</td>
+      <td>MFP 2026 &amp; 2027</td>
+      <td>2027</td>
+      <td>B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>0.47551770538822585</td>
+      <td>1.26008519105353</td>
+      <td>1.5921619722254305</td>
+      <td>1.9893636365300658</td>
+      <td>2.4871635725117263</td>
+      <td>2.8441623256449367</td>
+      <td>7.536810484420488</td>
+      <td>9.523025213185335</td>
+      <td>11.898764321314625</td>
+      <td>14.876200929004305</td>
+      <td></td>
+      <td>8671.276403390711</td>
+      <td>22674.269878079405</td>
+      <td>28621.36217480945</td>
+      <td>35761.46348171745</td>
+      <td>44709.885904643874</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.98146229955941</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>1927.3155931900117</td>
+      <td>5039.681803146411</td>
+      <td>6361.508392960347</td>
+      <td>7948.498352175483</td>
+      <td>9937.413624604511</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9.108717984215613</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1927.3155931900117</td>
+      <td>5039.681803146411</td>
+      <td>6361.508392960347</td>
+      <td>7948.498352175483</td>
+      <td>9937.413624604511</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9.108717984215613</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9.108717984215613</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>401.525074054742</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.6100000000000001</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>1927.3155931900117</td>
+      <td>5039.681803146411</td>
+      <td>6361.508392960347</td>
+      <td>7948.498352175483</td>
+      <td>9937.413624604511</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>36.43487193686245</td>
+      <td>94.47206033369268</td>
+      <td>119.17481695942483</td>
+      <td>148.90463972255992</td>
+      <td>186.16382465174172</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

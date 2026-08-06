@@ -998,7 +998,7 @@ def main():
  
         with open(
 
-            out_path / f"TC{tc}_RBU_Report_7decimal.html",
+            out_path / f"TC{tc}_RBU_Report_6D_4Aug_RBU_Stg.html",
 
             "w",
 
@@ -1014,7 +1014,7 @@ def main():
  
     summary_df.to_excel(
 
-        out_path / "RBU_Execution_Summary27JulPROD.xlsx",
+        out_path / "RBU_Execution_6D_4Aug_RBU_Stg.xlsx",
 
         index=False
 

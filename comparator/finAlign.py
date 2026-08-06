@@ -173,7 +173,7 @@ def clean_dataframe(df):
  
 # -------------------- COMPARISON --------------------
  
-def compare_dataframes(df1, df2, primary_key, tolerance=0.0001):
+def compare_dataframes(df1, df2, primary_key, tolerance=0.000001):
  
     common_cols = list(set(df1.columns) & set(df2.columns))
 
@@ -404,7 +404,7 @@ def main():
  
         mismatches = compare_dataframes(df1, df2, pk)
  
-        output_file = output_path / f"{tc}_FinAlign_27JulPROD.html"
+        output_file = output_path / f"{tc}_FinAlign_4Aug_6D_RBU_Stg.html"
  
         html = generate_html_report(df1, df2, mismatches, pk, output_file)
  

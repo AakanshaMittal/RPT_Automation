@@ -243,7 +243,7 @@ def align_tables(t1, t2):
  
 # ------------------ COMPARE ------------------
 
-def compare_tables(t1, t2, tol=1e-6):
+def compare_tables(t1, t2, tol=0.000001):
 
     mismatches = []
  
@@ -459,7 +459,7 @@ def main():
 
                 file2_dict[tc].name,
 
-                OUTPUT_DIR / f"{tc}_External_27JulPROD.html"
+                OUTPUT_DIR / f"{tc}_External_4Aug_6D_RBU_Stg.html"
 
             )
  
@@ -469,7 +469,7 @@ def main():
 
         all_results,
 
-        OUTPUT_DIR / "Consolidated_External_Report_27JulPROD.xlsx"
+        OUTPUT_DIR / "Consolidated_External_Report_4Aug_6D_RBU_Stg.xlsx"
 
     )
  

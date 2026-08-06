@@ -19,7 +19,7 @@ HEADER_ROW_2 = 13
 
 NDC_COL_NAME = "NDC"
 
-TOLERANCE = 0.0001
+TOLERANCE = 0.000001
  
 def load_mapping():
     with open(mapping_file) as f:
@@ -344,7 +344,7 @@ def main():
 
         EXCEL_FILE = excel_map[tc]
  
-        OUTPUT_HTML = out_path / f"TC{tc}_Report_27JulPROD.html"
+        OUTPUT_HTML = out_path / f"TC{tc}_Report_3Aug_6D_4Aug_RBU_Stg.html"
  
         print(f"Processing TC{tc}...")
  
