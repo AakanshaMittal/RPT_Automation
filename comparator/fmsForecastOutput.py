@@ -360,7 +360,7 @@ def main():
  
         html = generate_html(results)
  
-        output_file = out_path / f"TC{tc}_FMS_Report_4Aug_6D_RBU_Stg.html"
+        output_file = out_path / f"TC{tc}_FMS_Report_6D_STGAutomation.html"
  
         with open(output_file, "w") as f:
 

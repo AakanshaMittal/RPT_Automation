@@ -40,25 +40,27 @@ def extract_tc(filename):
 def load_and_prepare(file_path):
 
     df_raw = pd.read_excel(file_path, header=None)
- 
-    # Ignore D13
 
+    # Ignore A13
+    df_raw.iat[HEADER_ROW_1, 0] = np.nan
+
+    # Ignore D13
     df_raw.iat[HEADER_ROW_1, 3] = np.nan
- 
+
     header1 = df_raw.iloc[HEADER_ROW_1].ffill()
 
     header1.iloc[3] = ""
- 
+
     header2 = df_raw.iloc[HEADER_ROW_2]
- 
+
     combined_headers = []
- 
+
     for h1, h2 in zip(header1, header2):
 
         h1 = str(h1).strip() if pd.notna(h1) else ""
 
         h2 = str(h2).strip() if pd.notna(h2) else ""
- 
+
         if h1 and h2:
 
             combined_headers.append(f"{h1}_{h2}")
@@ -70,27 +72,44 @@ def load_and_prepare(file_path):
         else:
 
             combined_headers.append(h1)
- 
+
     df = df_raw.iloc[HEADER_ROW_2 + 1:].copy()
 
     df.columns = combined_headers
 
     df = df.dropna(how="all")
- 
+
     df.columns = [normalize_text(c) for c in df.columns]
- 
+
     ndc_col = find_ndc_column(df.columns)
 
     if not ndc_col:
 
         raise Exception("NDC column not found!")
- 
-    df[ndc_col] = df[ndc_col].astype(str).str.strip()
 
-    df = df[df[ndc_col] != "nan"]
+    print("NDC Column:", ndc_col)
+    print(df.columns.tolist())
 
-    df = df.set_index(ndc_col)
- 
+    # Handle duplicate NDC columns by taking the first occurrence
+    ndc_data = df.loc[:, ndc_col]
+
+    if isinstance(ndc_data, pd.DataFrame):
+        ndc_series = ndc_data.iloc[:, 0]
+    else:
+        ndc_series = ndc_data
+
+    ndc_series = ndc_series.astype(str).str.strip()
+
+    df = df[ndc_series != "nan"]
+
+    df.index = ndc_series[ndc_series != "nan"]
+
+    print("Duplicate columns:")
+    print(df.columns[df.columns.duplicated()].tolist())
+
+    # Remove duplicate column names
+    df = df.loc[:, ~df.columns.duplicated()]
+
     return df
  
  
@@ -344,7 +363,7 @@ def main():
 
         EXCEL_FILE = excel_map[tc]
  
-        OUTPUT_HTML = out_path / f"TC{tc}_Report_3Aug_6D_4Aug_RBU_Stg.html"
+        OUTPUT_HTML = out_path / f"TC{tc}_Report_6D_STGAutomation.html"
  
         print(f"Processing TC{tc}...")
  

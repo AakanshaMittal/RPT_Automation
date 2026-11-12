@@ -343,10 +343,10 @@ def main():
         generate_html_report(
             extra1, extra2, mismatches, summary, ndc_map,
             file1.name, file2.name,
-            out_path / f"TC{tc}_RAO_Report_6D_4Aug_RBU_Stg.html"
+            out_path / f"TC{tc}_RAO_Report_6D_STGAutomation.html"
         )
 
-    workbook.save(out_path / "Consolidated_RAO_Report_6D_4Aug_RBU_Stg.xlsx")
+    workbook.save(out_path / "Consolidated_RAO_Report_6D_STGAutomation.xlsx")
     print("All scenarios completed.")
 
 
